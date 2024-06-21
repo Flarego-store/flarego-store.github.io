@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Product Listing Details</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <section class="header-wrapper">
+        <header class="d-none d-md-block">
+            <div class="header-bg text-white">
+                <!-- Top Header -->
+                <div class="top-header py-2">
+                    <div class="container">
+                        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                            <div class="col-lg-6 col-6 text-start">
+                            <a href="#" class="text-white me-4"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
+                            <a href="#" class="text-white "><i class="fa-regular fa-envelope me-2"></i> faregoshoponline@gmail.com</a>
+                            </div>
+                            <div class="col-lg-6 col-6 text-end "><i class="fa-solid fa-map-location-dot"></i> Track Order</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search -->
+                <div class="container py-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <!-- Logo -->
+                    <div class="col-lg-4">
+                        <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+                    </div>
+                    <!-- Form -->
+                    <div class="col-12 col-lg-4">
+                    <form>
+                        <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                            <div class="input-group mb-2 searchform-wrapper">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                    <!-- Cart Menu -->
+                    <ul class="nav col-12 col-lg-4 justify-content-end">
+                    <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i> Sign In</a></li>
+                    <li >
+                        <a href="#" class="nav-link px-2 text-white">
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-purple ">3</span> Wishlist
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2 text-white"> 
+                        <i class="fa-solid fa-bag-shopping"></i> 
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-purple ">3</span> Cart
+                        </a>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <!-- Main Menu -->
+            <div class="lower-bg py-2">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <div class="col-lg-3">
+                        <div class="dropdown show">
+                            <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All Categories
+                            </a>
+                        
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <ul class="nav col-12 col-lg-6 justify-content-center">
+                        <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">DafoxTech</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">AdoPisoft</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    </ul>
+                    
+            
+                    <div class="col-12 col-lg-3 justify-content-end text-end">
+                        <a href="" class="text-white"><i class="fa-regular fa-calendar me-2"></i> 30 Days Free Return</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Header -->
+        <header class="mobile-header d-block d-md-none">
+            <div class="header-bg text-white">
+                <!-- Top Header -->
+                <div class="top-header py-2">
+                    <div class="container">
+                        <div class="d-flex flex-wrap align-items-center justify-content-sm-center justify-content-center">
+                            <div class="col-lg-6 col-12 text-center info">
+                            <a href="#" class="text-white me-4 fs-sm-2"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
+                            <a href="#" class="text-white fs-sm-2"><i class="fa-regular fa-envelope me-2"></i> faregoshoponline@gmail.com</a>
+                            </div>
+                            <div class="col-lg-6 col-6 text-end d-none d-lg-block"><i class="fa-solid fa-map-location-dot"></i> Track Order</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search -->
+                <div class="container py-2">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <!-- Logo -->
+                    <div class="col-lg-4 col-4">
+                        <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
+                    </div>
+                    <!-- Cart Menu -->
+                    <ul class="nav col-8 col-lg-4 justify-content-end">
+                    <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i></a></li>
+                    <li >
+                        <a href="#" class="nav-link px-2 text-white">
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-purple ">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-2 text-white"> 
+                        <i class="fa-solid fa-bag-shopping"></i> 
+                        <!-- Badge -->
+                        <span class="badge rounded-pill bg-purple ">3</span>
+                        </a>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <!-- Main Menu -->
+            <div class="lower-bg py-2">
+                <div class="container">
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <div class="row  d-flex justify-content-start align-items-center">
+                        <div class="col-2">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="col-10">
+                            <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto">
+                                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                <div class="input-group mb-2 searchform-wrapper">
+                                    <div class="input-group-prepend">
+                                    <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                                </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">DafoxTech</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">AdoPisoft</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">On Sale</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Blog and Events/a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Page Header -->
+     <section class="page-headers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-start">
+                    <div class="p-3"><img src="img/ado-logo.png" alt=""></div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3"><h3 class="text-white"><b>Official Online Store</b></h3></div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="p-3"><img src="img/ado-headline-img.png" alt="" class="img-fluid header-img"></div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Main -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Thumbnails Section -->
+            <div class="col-md-2 thumbnail-column order-2 order-md-1">
+                <div class="thumbnail-wrapper">
+                    <img src="img/thumbnail01.png" class="thumbnail-image" alt="Thumbnail 1" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="thumbnail-wrapper">
+                    <img src="img/thumbnail02.png" class="thumbnail-image" alt="Thumbnail 1" onclick="changeMainImage(this.src)">
+                </div>
+                <div class="thumbnail-wrapper">
+                    <img src="img/thumbnail03.png" class="thumbnail-image" alt="Thumbnail 1" onclick="changeMainImage(this.src)">
+                </div>
+            </div>
+            <!-- Product Details Section -->
+            <div class="col-md-5 order-1 order-md-2">
+                <div class="main-img-wrapper">
+                    <img src="img/main-img.png" class="img-fluid main-image" id="mainImage" alt="Product Image">
+                </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-3">
+                <div class="row">
+                    <div class="col-11 d-flex justify-content-left align-items-start">
+                        <div class="me-2">
+                            <h3 class="prod-title">PISO WIFI MACHINE</h3>
+                            <div class="d-flex justify-content-start">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="num-reviews">(150 Reviews)</span>| <span class="stock">In Stock</span>
+                            </div>
+                        </div>
+                        <div class="p-1 prod-ico">
+                            <img src="img/ado-ico.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-1 d-flex justify-content-end align-items-end">
+                        <div class="heart-wrapper p-3">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="prod-price">PHP12,950.00 <span>Price: $99.99</span></h2>
+                <p class="product-description">
+                    🔥   AMAZING FEATURES:🔥<br>
+                    - 200 to Unlimited users can use at the same time with 
+                    separate payment- Have Your Own Admin Panel/Dashboard<br>
+                    - Adjustable timer, Customizable Rate, Hour or Even Promo,  Subscription is also available <br>
+                    - Sales Inventory, You Can monitor Daily Weekly and Monthly- Can monitor and Block Users.
+                </p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-block dropdown-toggle btn-down" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                Full-Width Dropdown
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="quantity-selector justify-content-center align-items-center d-flex flex-column flex-md-row mb-3">
+                            <span class="me-2">QTY</span>
+                            <div class="btn-qty justify-content-center align-items-center d-flex flex-column flex-md-row">
+                                <button class="btn btn-outline-secondary" id="decreaseBtn"><i class="fas fa-minus"></i></button>
+                                <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
+                                <button class="btn btn-outline-secondary" id="increaseBtn"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-cta bradius mb-3">Show Now!</button>
+                <button class="btn btn-primary btn-white bradius mb-3">Discover More</button>
+                <!-- Paypal link -->
+                <div class="paypal-wrapper justify-content-center align-items-center d-flex flex-column flex-md-row mb-3">
+                    <a href="#" class="me-2">Pay with Paypal</a>
+                    <div class="paypal"><img src="img/PayPal.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    
+    <div class="container mt-5">
+        <!-- Nav Underline -->
+        <ul class="nav nav-underline nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link " id="info-tab" data-bs-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Additional Info</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="questions-tab" data-bs-toggle="tab" href="#questions" role="tab" aria-controls="questions" aria-selected="false">Questions</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-4" id="myTabContent">
+            <div class="tab-pane fade " id="info" role="tabpanel" aria-labelledby="info-tab">
+                Additional Info
+            </div>
+            <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">
+                Questions
+            </div>
+            <div class="tab-pane fade show active" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Left Column: Review Form -->
+                        <div class="col-md-6">
+                            <h3 class="review-header mb-4">Write a Review</h3>
+                            <form class="review-form">
+                                <div class="mb-3">
+                                    <textarea class="form-control review-area" id="reviewTextarea" rows="5" placeholder="Share Your Thoughts"></textarea>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="dropdown">
+                                        <i class="fas fa-smile-beam smiley-icon" id="smileyDropdown" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                        <ul class="dropdown-menu dropdown-menu-option p-2" aria-labelledby="smileyDropdown">
+                                            <li class="smiley"><i class="fas fa-smile"></i></li>
+                                            <li class="smiley"><i class="fas fa-frown"></i></li>
+                                            <li class="smiley"><i class="fas fa-meh"></i></li>
+                                            <li class="smiley"><i class="fas fa-laugh"></i></li>
+                                            <li class="smiley"><i class="fas fa-grin"></i></li>
+                                        </ul>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-submit">Write Review</button>
+                                </div>
+                            </form>
+                        </div>
+                
+                        <!-- Right Column: Reviews Section -->
+                        <div class="col-md-6">
+                            <div class="row mb-4">
+                                <div class="col-6 d-flex justify-content-left align-items-start">
+                                    <div class="me-2">
+                                        <h3 class="review-header">11 Customer Reviews</h3>
+                                        <div class="d-flex justify-content-start">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span class="num-reviews">(11 Reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end align-items-start">
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary btn-block dropdown-toggle btn-down" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Full-Width Dropdown
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <!-- Review -->
+                                <div class="row g-0 align-items-start reviews-wrapper">
+                                    <div class="col-auto pe-5">
+                                        <img src="img/sofia.png" class="img-fluid rounded-circle review-image mt-3" alt="Reviewer Image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-0 review-header">Reviewer Name</h5>
+                                            <p class="card-text"><small class="text-muted">Review Title</small></p>
+                                            <div class="mb-2">
+                                                <!-- Star Rating -->
+                                                <span class="text-warning">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                </span>
+                                            </div>
+                                            <p class="card-text review-content">This is a sample review. The review content goes here.</p>
+                                            <div class="metas">
+                                                <span>about an hour</span>
+                                                <button class="btn btn-outline-primary btn-sm me-2">Like</button>
+                                                <button class="btn btn-outline-secondary btn-sm">Reply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review -->
+                                <div class="row g-0 align-items-start reviews-wrapper">
+                                    <div class="col-auto pe-5">
+                                        <img src="img/nicolas.png" class="img-fluid rounded-circle review-image mt-3" alt="Reviewer Image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-0 review-header">Reviewer Name</h5>
+                                            <p class="card-text"><small class="text-muted">Review Title</small></p>
+                                            <div class="mb-2">
+                                                <!-- Star Rating -->
+                                                <span class="text-warning">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                </span>
+                                            </div>
+                                            <p class="card-text review-content">This is a sample review. The review content goes here.</p>
+                                            <div class="metas">
+                                                <span>about an hour</span>
+                                                <button class="btn btn-outline-primary btn-sm me-2">Like</button>
+                                                <button class="btn btn-outline-secondary btn-sm">Reply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review -->
+                                <div class="row g-0 align-items-start reviews-wrapper">
+                                    <div class="col-auto pe-5">
+                                        <img src="img/jensen.png" class="img-fluid rounded-circle review-image mt-3" alt="Reviewer Image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-0 review-header">Reviewer Name</h5>
+                                            <p class="card-text"><small class="text-muted">Review Title</small></p>
+                                            <div class="mb-2">
+                                                <!-- Star Rating -->
+                                                <span class="text-warning">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                </span>
+                                            </div>
+                                            <p class="card-text review-content">This is a sample review. The review content goes here.</p>
+                                            <div class="metas">
+                                                <span>about an hour</span>
+                                                <button class="btn btn-outline-primary btn-sm me-2">Like</button>
+                                                <button class="btn btn-outline-secondary btn-sm">Reply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more reviews as needed -->
+                            <!-- Load More Button -->
+                            <div class="text-center my-5"> <button class="btn  btn-white bradius load-btn">Load More</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Frequently Bought Together  -->
+    <div class="container products-slider my-5">
+        <div class="row">
+            <div class="col">
+                <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+                    <h1>Frequently Bought Together</h1>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- Container -->
+                            <div class="prod-wrapper mt-5">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Container -->
+                            <div class="prod-wrapper mt-5">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Container -->
+                            <div class="prod-wrapper mt-5">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-hover position-relative">
+                                            <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title f18 prod-title">ESP32 Development Board
+                                                    30P/38P with Activation
+                                                    Key Code</h5>
+                                                <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                                                <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                                                <div class="d-flex justify-content-start">
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star text-warning"></i>
+                                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="position-absolute top-0 end-0 p-2">
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                                                <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                                            </div>
+                                            <div class="badge-store">
+                                                <img src="img/dafox-ico.png" alt="" class="me-2">
+                                                <span class="badge bg-danger p-2">Store</span>
+                                            </div>
+                                            <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-white pt-6 footer-bg  mt-auto ">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+                    <div class="mt-4 pe-lg-5">It started with a crazy idea, and is 
+                        now being used by thousands of people nationwide and in other countries.</div>
+                </div>
+                <div class="col-md-6 col-sm-6 mb-3">
+                    <h5 class="text-white">Quicklinks</h5>
+                    <div classs="d-flex flex-wrap align-items-center justify-content-center">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled col-4">
+                                    <li><a href="#" class="text-white">Home</a></li>
+                                    <li><a href="#" class="text-white">DafoxTech</a></li>
+                                    <li><a href="#" class="text-white">AdoPisoft</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled col-4">
+                                    <li><a href="#" class="text-white">On Sale</a></li>
+                                    <li><a href="#" class="text-white">Blog and Events</a></li>
+                                    <li><a href="#" class="text-white">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                              <ul class="list-unstyled col-4">
+                                <li><a href="#" class="text-white">On Sale</a></li>
+                                <li><a href="#" class="text-white">Blog and Events</a></li>
+                                <li><a href="#" class="text-white">FAQs</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <h5 class="text-white">Newsletter</h5>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="newsletterEmail" class="sr-only">Email address</label>
+                            <input type="email" class="form-control bradius" id="newsletterEmail" placeholder="Enter email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-cta bradius">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="divider mt-5 py-2">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 justify-content-start"><a href="" class="text-white"><b> &copy; 2024, Flarego</b> Online Store. Powered by Shopify</a></div>
+              <div class="col-6 text-end">We accept payments via <img src="img/payment-gateway.png" alt=""></div>
+            </div>
+
+          </div>
+        </div>
+    </footer>
+
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function changeMainImage(src) {
+        document.getElementById("mainImage").src = src;
+    }
+
+    document.getElementById('increaseBtn').addEventListener('click', function() {
+        var quantityInput = document.getElementById('quantityInput');
+        var currentQuantity = parseInt(quantityInput.value);
+        quantityInput.value = currentQuantity + 1;
+    });
+
+    document.getElementById('decreaseBtn').addEventListener('click', function() {
+        var quantityInput = document.getElementById('quantityInput');
+        var currentQuantity = parseInt(quantityInput.value);
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    });
+
+    // smiley
+    document.addEventListener("DOMContentLoaded", function() {
+        const smileys = document.querySelectorAll('.smiley');
+        smileys.forEach(smiley => {
+            smiley.addEventListener('click', function() {
+                alert(`You clicked on the ${this.innerHTML} smiley!`);
+            });
+        });
+    });
+    
+    // JavaScript to handle tab switching
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.nav-underline .nav-link');
+        const contents = document.querySelectorAll('.content');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                // Remove active class from all nav links
+                navLinks.forEach(link => link.classList.remove('active'));
+                
+                // Add active class to the clicked nav link
+                this.classList.add('active');
+
+                // Hide all content
+                contents.forEach(content => content.classList.remove('active'));
+
+                // Show the content corresponding to the clicked nav link
+                const contentId = this.getAttribute('href').substring(1);
+                document.getElementById(contentId).classList.add('active');
+            });
+        });
+    });
+
+</script>
+</body>
+</html>
