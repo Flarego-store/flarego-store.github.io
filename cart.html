@@ -2,906 +2,937 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- FontAwesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- FontAwesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Header -->
   <section class="header-wrapper">
-      <header class="d-none d-md-block">
-          <div class="header-bg text-white">
-              <!-- Top Header -->
-              <div class="top-header py-2">
-                  <div class="container">
-                      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                          <div class="col-lg-6 col-6 text-start">
-                          <a href="#" class="text-white me-4"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
-                          <a href="#" class="text-white "><i class="fa-regular fa-envelope me-2"></i> faregoshoponline@gmail.com</a>
-                          </div>
-                          <div class="col-lg-6 col-6 text-end "><i class="fa-solid fa-map-location-dot"></i> Track Order</div>
-                      </div>
-                  </div>
+    <header class="d-none d-md-block">
+      <div class="header-bg text-white">
+        <!-- Top Header -->
+        <div class="top-header py-2">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <div class="col-lg-6 col-6 text-start">
+                <a href="#" class="text-white me-4"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
+                <a href="#" class="text-white "><i class="fa-regular fa-envelope me-2"></i>
+                  faregoshoponline@gmail.com</a>
               </div>
-              <!-- Search -->
-              <div class="container py-3">
-              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                  <!-- Logo -->
-                  <div class="col-lg-4">
-                      <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+              <div class="col-lg-6 col-6 text-end "><i class="fa-solid fa-map-location-dot"></i> Track Order</div>
+            </div>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="container py-3">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!-- Logo -->
+            <div class="col-lg-4">
+              <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+            </div>
+            <!-- Form -->
+            <div class="col-12 col-lg-4">
+              <form>
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2 searchform-wrapper">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                    </div>
                   </div>
-                  <!-- Form -->
-                  <div class="col-12 col-lg-4">
+                </div>
+              </form>
+            </div>
+            <!-- Cart Menu -->
+            <ul class="nav col-12 col-lg-4 justify-content-end">
+              <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i> Sign In</a></li>
+              <li>
+                <a href="#" class="nav-link px-2 text-white">
+                  <i class="fa-regular fa-heart"></i>
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-purple ">3</span> Wishlist
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 text-white">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-purple ">3</span> Cart
+                </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Main Menu -->
+      <div class="lower-bg py-2">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <div class="col-lg-3">
+              <div class="dropdown show">
+                <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All Categories
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav col-12 col-lg-6 justify-content-center">
+              <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">DafoxTech</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">AdoPisoft</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            </ul>
+
+
+            <div class="col-12 col-lg-3 justify-content-end text-end">
+              <a href="" class="text-white"><i class="fa-regular fa-calendar me-2"></i> 30 Days Free Return</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header d-block d-md-none">
+      <div class="header-bg text-white">
+        <!-- Top Header -->
+        <div class="top-header py-2">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-sm-center justify-content-center">
+              <div class="col-lg-6 col-12 text-center info">
+                <a href="#" class="text-white me-4 fs-sm-2"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
+                <a href="#" class="text-white fs-sm-2"><i class="fa-regular fa-envelope me-2"></i>
+                  faregoshoponline@gmail.com</a>
+              </div>
+              <div class="col-lg-6 col-6 text-end d-none d-lg-block"><i class="fa-solid fa-map-location-dot"></i> Track
+                Order</div>
+            </div>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="container py-2">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!-- Logo -->
+            <div class="col-lg-4 col-4">
+              <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
+            </div>
+            <!-- Cart Menu -->
+            <ul class="nav col-8 col-lg-4 justify-content-end">
+              <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i></a></li>
+              <li>
+                <a href="#" class="nav-link px-2 text-white">
+                  <i class="fa-regular fa-heart"></i>
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-purple ">3</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 text-white">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-purple ">3</span>
+                </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Main Menu -->
+      <div class="lower-bg py-2">
+        <div class="container">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <div class="row  d-flex justify-content-start align-items-center">
+                <div class="col-2">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </div>
+                <div class="col-10">
                   <form>
-                      <div class="form-row align-items-center">
+                    <div class="form-row align-items-center">
                       <div class="col-auto">
-                          <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                          <div class="input-group mb-2 searchform-wrapper">
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2 searchform-wrapper">
                           <div class="input-group-prepend">
-                              <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
                           </div>
                           <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                          </div>
+                        </div>
                       </div>
-                      </div>
+                    </div>
                   </form>
-                  </div>
-                  <!-- Cart Menu -->
-                  <ul class="nav col-12 col-lg-4 justify-content-end">
-                  <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i> Sign In</a></li>
-                  <li >
-                      <a href="#" class="nav-link px-2 text-white">
-                      <i class="fa-regular fa-heart"></i>
-                      <!-- Badge -->
-                      <span class="badge rounded-pill bg-purple ">3</span> Wishlist
-                      </a>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
-                  <li>
-                      <a href="#" class="nav-link px-2 text-white"> 
-                      <i class="fa-solid fa-bag-shopping"></i> 
-                      <!-- Badge -->
-                      <span class="badge rounded-pill bg-purple ">3</span> Cart
-                      </a>
-                  </ul>
-              </div>
-              </div>
-          </div>
-          <!-- Main Menu -->
-          <div class="lower-bg py-2">
-              <div class="container">
-                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                  <div class="col-lg-3">
-                      <div class="dropdown show">
-                          <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          All Categories
-                          </a>
-                      
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                      </div>
-                  </div>
-          
-                  <ul class="nav col-12 col-lg-6 justify-content-center">
-                      <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">DafoxTech</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">AdoPisoft</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
-                      <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                  </ul>
-                  
-          
-                  <div class="col-12 col-lg-3 justify-content-end text-end">
-                      <a href="" class="text-white"><i class="fa-regular fa-calendar me-2"></i> 30 Days Free Return</a>
-                  </div>
-                  </div>
-              </div>
-          </div>
-      </header>
-
-      <!-- Mobile Header -->
-      <header class="mobile-header d-block d-md-none">
-          <div class="header-bg text-white">
-              <!-- Top Header -->
-              <div class="top-header py-2">
-                  <div class="container">
-                      <div class="d-flex flex-wrap align-items-center justify-content-sm-center justify-content-center">
-                          <div class="col-lg-6 col-12 text-center info">
-                          <a href="#" class="text-white me-4 fs-sm-2"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
-                          <a href="#" class="text-white fs-sm-2"><i class="fa-regular fa-envelope me-2"></i> faregoshoponline@gmail.com</a>
-                          </div>
-                          <div class="col-lg-6 col-6 text-end d-none d-lg-block"><i class="fa-solid fa-map-location-dot"></i> Track Order</div>
-                      </div>
-                  </div>
-              </div>
-              <!-- Search -->
-              <div class="container py-2">
-              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                  <!-- Logo -->
-                  <div class="col-lg-4 col-4">
-                      <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
-                  </div>
-                  <!-- Cart Menu -->
-                  <ul class="nav col-8 col-lg-4 justify-content-end">
-                  <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i></a></li>
-                  <li >
-                      <a href="#" class="nav-link px-2 text-white">
-                      <i class="fa-regular fa-heart"></i>
-                      <!-- Badge -->
-                      <span class="badge rounded-pill bg-purple ">3</span>
-                      </a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DafoxTech</a>
                   </li>
-                  <li>
-                      <a href="#" class="nav-link px-2 text-white"> 
-                      <i class="fa-solid fa-bag-shopping"></i> 
-                      <!-- Badge -->
-                      <span class="badge rounded-pill bg-purple ">3</span>
-                      </a>
-                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AdoPisoft</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">On Sale</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog and Events/a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQs</a>
+                  </li>
+                </ul>
               </div>
-              </div>
-          </div>
-          <!-- Main Menu -->
-          <div class="lower-bg py-2">
-              <div class="container">
-                  <!-- Navbar -->
-                  <nav class="navbar navbar-expand-lg">
-                  <div class="container">
-                      <div class="row  d-flex justify-content-start align-items-center">
-                      <div class="col-2">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <i class="fa-solid fa-bars"></i>
-                          </button>
-                      </div>
-                      <div class="col-10">
-                          <form>
-                          <div class="form-row align-items-center">
-                              <div class="col-auto">
-                              <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                              <div class="input-group mb-2 searchform-wrapper">
-                                  <div class="input-group-prepend">
-                                  <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
-                                  </div>
-                                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                              </div>
-                              </div>
-                          </div>
-                          </form>
-                      </div>
-                      </div>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav ms-auto">
-                          <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                          <a class="nav-link" href="#">DafoxTech</a>
-                          </li>
-                          <li class="nav-item">
-                          <a class="nav-link" href="#">AdoPisoft</a>
-                          </li>
-                          <li class="nav-item">
-                          <a class="nav-link" href="#">On Sale</a>
-                          </li>
-                          <li class="nav-item">
-                          <a class="nav-link" href="#">Blog and Events/a>
-                          </li>
-                          <li class="nav-item">
-                          <a class="nav-link" href="#">FAQs</a>
-                          </li>
-                      </ul>
-                      </div>
-                  </div>
-                  </nav>
-              </div>
-          </div>
-      </header>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
   </section>
 
   <!-- Tabs -->
   <section class="wizard-wrapper">
     <div class="container">
       <h2 class="text-center mb-5">My Cart</h2>
-        <div class="step-wizard">
-            <div class="step">
-                <div class="step-number"><span>1</span></div>
-                <p class="step-title">Shopping Cart</p>
-                <div class="step-indicator"></div>
-            </div>
-            <div class="step">
-                <div class="step-number"><span>2</span></div>
-                <p class="step-title">Checkout Details</p>
-                <div class="step-indicator"></div>
-            </div>
-            <div class="step">
-                <div class="step-number"><span>3</span></div>
-                <p class="step-title">Order Complete</p>
-                <div class="step-indicator"></div>
-            </div>
+      <div class="step-wizard">
+        <div class="step">
+          <div class="step-number"><span>1</span></div>
+          <p class="step-title">Shopping Cart</p>
+          <div class="step-indicator"></div>
         </div>
+        <div class="step">
+          <div class="step-number"><span>2</span></div>
+          <p class="step-title">Checkout Details</p>
+          <div class="step-indicator"></div>
+        </div>
+        <div class="step">
+          <div class="step-number"><span>3</span></div>
+          <p class="step-title">Order Complete</p>
+          <div class="step-indicator"></div>
+        </div>
+      </div>
     </div>
   </section>
 
 
-    <div class="container mt-5">
-        <form id="multiStepForm">
-            <!-- Order Details -->
-            <div class="step-content" id="step-1">
-              <div class="mt-5">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <div class="cart-item">
-                      <div class="table-responsive">
-                        <table class="table ">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Subtotal</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="justify-content-center align-items-center">
-                                    <th>
-                                      <div class="d-flex flex-row">
-                                        <div class="p-2 product-cart-img">
-                                          <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
-                                        </div>
-                                        <div class="p-2">
-                                          <p>TB74 Bill Acceptor</p>
-                                          <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
-                                        </div>
-                                      </div>
-                                    </th>
-                                    <td>
-                                      <div class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
-                                        <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
-                                            <button class="btn btn-outline-secondary" id="decreaseBtn"><i class="fas fa-minus"></i></button>
-                                            <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
-                                            <button class="btn btn-outline-secondary" id="increaseBtn"><i class="fas fa-plus"></i></button>
-                                        </div>
-                                    </div>
-                                    </td>
-                                    <td><span class="txt-blue">$19.00</span></td>
-                                    <td><span class="txt-blue">PHP38.00</span></td>
-                                </tr>
-                                
-                                <tr class="justify-content-center align-items-center">
-                                  <th>
-                                    <div class="d-flex flex-row">
-                                      <div class="p-2 product-cart-img">
-                                        <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
-                                      </div>
-                                      <div class="p-2">
-                                        <p>TB74 Bill Acceptor</p>
-                                        <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
-                                      </div>
-                                    </div>
-                                  </th>
-                                  <td>
-                                    <div class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
-                                      <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
-                                          <button class="btn btn-outline-secondary" id="decreaseBtn"><i class="fas fa-minus"></i></button>
-                                          <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
-                                          <button class="btn btn-outline-secondary" id="increaseBtn"><i class="fas fa-plus"></i></button>
-                                      </div>
-                                  </div>
-                                  </td>
-                                  <td><span class="txt-blue">$19.00</span></td>
-                                  <td><span class="txt-blue">PHP38.00</span></td>
-                              </tr>
-                              
-                              <tr class="justify-content-center align-items-center">
-                                <th>
-                                  <div class="d-flex flex-row">
-                                    <div class="p-2 product-cart-img">
-                                      <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
-                                    </div>
-                                    <div class="p-2">
-                                      <p>TB74 Bill Acceptor</p>
-                                      <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
-                                    </div>
-                                  </div>
-                                </th>
-                                <td>
-                                  <div class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
-                                    <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
-                                        <button class="btn btn-outline-secondary" id="decreaseBtn"><i class="fas fa-minus"></i></button>
-                                        <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
-                                        <button class="btn btn-outline-secondary" id="increaseBtn"><i class="fas fa-plus"></i></button>
-                                    </div>
-                                </div>
-                                </td>
-                                <td><span class="txt-blue">$19.00</span></td>
-                                <td><span class="txt-blue">PHP38.00</span></td>
-                              </tr>
-                              
-                              <tr class="justify-content-center align-items-center">
-                                <th>
-                                  <div class="d-flex flex-row">
-                                    <div class="p-2 product-cart-img">
-                                      <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
-                                    </div>
-                                    <div class="p-2">
-                                      <p>TB74 Bill Acceptor</p>
-                                      <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
-                                    </div>
-                                  </div>
-                                </th>
-                                <td>
-                                  <div class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
-                                    <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
-                                        <button class="btn btn-outline-secondary" id="decreaseBtn"><i class="fas fa-minus"></i></button>
-                                        <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
-                                        <button class="btn btn-outline-secondary" id="increaseBtn"><i class="fas fa-plus"></i></button>
-                                    </div>
-                                </div>
-                                </td>
-                                <td><span class="txt-blue">$19.00</span></td>
-                                <td><span class="txt-blue">PHP38.00</span></td>
-                              </tr>
-                                <!-- Additional cart items can be added here -->
-                            </tbody>
-                        </table>
-                    </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="mb-3 summary-wrapper">
-                      <h5>Cart Summary</h5>
-                      <!-- Free Shipping -->
-                      <div class="d-flex flex-row mb-3 radio-btn-wrappper">
-                        <div class="p-2">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="shipping" id="freeShipping" value="free">
-                            <label class="form-check-label" for="freeShipping">
-                              Free Shipping
-                            </label>
+  <div class="container mt-5">
+    <form id="multiStepForm">
+      <!-- Order Details -->
+      <div class="step-content" id="step-1">
+        <div class="mt-5">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="cart-item">
+                <div class="table-responsive">
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Subtotal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="justify-content-center align-items-center">
+                        <th>
+                          <div class="d-flex flex-row">
+                            <div class="p-2 product-cart-img">
+                              <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
+                            </div>
+                            <div class="p-2">
+                              <p>TB74 Bill Acceptor</p>
+                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                            </div>
                           </div>
-                        </div>
-                        <div class="ms-auto p-2 align-items-end">
-                          <span class="txt-blue">PHP0.00</span>
-                        </div>
-                      </div>
-                      <!-- Express Shipping -->
-                      <div class="d-flex flex-row mb-3 radio-btn-wrappper">
-                        <div class="p-2">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="express" id="express" value="express">
-                            <label class="form-check-label" for="express">
-                              Express Shipping
-                            </label>
+                        </th>
+                        <td>
+                          <div
+                            class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
+                            <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
+                              <button class="btn btn-outline-secondary" id="decreaseBtn"><i
+                                  class="fas fa-minus"></i></button>
+                              <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
+                              <button class="btn btn-outline-secondary" id="increaseBtn"><i
+                                  class="fas fa-plus"></i></button>
+                            </div>
                           </div>
-                        </div>
-                        <div class="ms-auto p-2 align-items-end">
-                          <span class="txt-blue">PHP0.00</span>
-                        </div>
-                      </div>
-                      <!-- Pickup -->
-                      <div class="d-flex flex-row mb-3 radio-btn-wrappper">
-                        <div class="p-2">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="pickup" id="pickup" value="pickup">
-                            <label class="form-check-label" for="pickup">
-                              Pick Up
-                            </label>
+                        </td>
+                        <td><span class="txt-blue">$19.00</span></td>
+                        <td><span class="txt-blue">PHP38.00</span></td>
+                      </tr>
+
+                      <tr class="justify-content-center align-items-center">
+                        <th>
+                          <div class="d-flex flex-row">
+                            <div class="p-2 product-cart-img">
+                              <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
+                            </div>
+                            <div class="p-2">
+                              <p>TB74 Bill Acceptor</p>
+                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                            </div>
                           </div>
-                        </div>
-                        <div class="ms-auto p-2 align-items-end">
-                          <span class="txt-blue">PHP0.00</span>
-                        </div>
-                      </div>
-                      <!-- Subtotal -->
-                      <div class="d-flex flex-row mb-3">
-                        <div class="p-2">
-                          <span>Subtotal</span>
-                        </div>
-                        <div class="ms-auto p-2 align-items-end">
-                          <span class="txt-blue">PHP0.00</span>
-                        </div>
-                      </div>
-                      <!-- Total -->
-                      <div class="d-flex flex-row mb-3">
-                        <div class="p-2">
-                          <span>Total</span>
-                        </div>
-                        <div class="ms-auto p-2 align-items-end">
-                          <span class="txt-blue">PHP0.00</span>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary btn-submit">Write Review</button>
-                    </div>
-                    <div class="mb-3 coupon-wrapper">
-                      <h5>Apply Coupon</h5>
-                      <p>Add your code for an instant cart discount</p>
-                      <div class="input-group flex-nowrap">
-                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-ticket"></i></span>
-                        <input type="text" class="form-control" placeholder="Enter coupon code" aria-label="Enter coupon code"" aria-describedby="addon-wrapping">
-                        <button class="btn btn-primary btn-coupon">Apply</button>
-                      </div>
-                    </div>
-                  </div>
+                        </th>
+                        <td>
+                          <div
+                            class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
+                            <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
+                              <button class="btn btn-outline-secondary" id="decreaseBtn"><i
+                                  class="fas fa-minus"></i></button>
+                              <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
+                              <button class="btn btn-outline-secondary" id="increaseBtn"><i
+                                  class="fas fa-plus"></i></button>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="txt-blue">$19.00</span></td>
+                        <td><span class="txt-blue">PHP38.00</span></td>
+                      </tr>
+
+                      <tr class="justify-content-center align-items-center">
+                        <th>
+                          <div class="d-flex flex-row">
+                            <div class="p-2 product-cart-img">
+                              <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
+                            </div>
+                            <div class="p-2">
+                              <p>TB74 Bill Acceptor</p>
+                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                            </div>
+                          </div>
+                        </th>
+                        <td>
+                          <div
+                            class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
+                            <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
+                              <button class="btn btn-outline-secondary" id="decreaseBtn"><i
+                                  class="fas fa-minus"></i></button>
+                              <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
+                              <button class="btn btn-outline-secondary" id="increaseBtn"><i
+                                  class="fas fa-plus"></i></button>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="txt-blue">$19.00</span></td>
+                        <td><span class="txt-blue">PHP38.00</span></td>
+                      </tr>
+
+                      <tr class="justify-content-center align-items-center">
+                        <th>
+                          <div class="d-flex flex-row">
+                            <div class="p-2 product-cart-img">
+                              <img src="https://via.placeholder.com/100" alt="Product Image" class="img-fluid">
+                            </div>
+                            <div class="p-2">
+                              <p>TB74 Bill Acceptor</p>
+                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                            </div>
+                          </div>
+                        </th>
+                        <td>
+                          <div
+                            class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
+                            <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
+                              <button class="btn btn-outline-secondary" id="decreaseBtn"><i
+                                  class="fas fa-minus"></i></button>
+                              <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
+                              <button class="btn btn-outline-secondary" id="increaseBtn"><i
+                                  class="fas fa-plus"></i></button>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="txt-blue">$19.00</span></td>
+                        <td><span class="txt-blue">PHP38.00</span></td>
+                      </tr>
+                      <!-- Additional cart items can be added here -->
+                    </tbody>
+                  </table>
                 </div>
               </div>
-
-              <!-- Next BUTTON -->
-              <div class="text-center mt-5">
-                <button type="button" class="btn btn-primary next-step btn-submit">Checkout</button>
-              </div>
             </div>
-            
-            <!-- Checkout -->
-            <div class="step-content d-none" id="step-2">
-              <div class="row">
-                <!-- Checkout Form -->
-                <div class="col-lg-8 checkout-wrapper">
-                  <div>
-                    <div class="mb-3">
-                      <h5>Contact Information</h5>
-                    </div>
-                    <!-- Name -->
-                    <div class="row mb-3">
-                      <div class="col-md-6">
-                        <label for="firstname" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstname" placeholder="First Name">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="lastname" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                      </div>
-                    </div>
-                    <!-- Number -->
-                    <div class="mb-3">
-                      <label for="number" class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number">
-                    </div>
-                    <!-- Email -->
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Your Email">
-                    </div>
-                    <div class="mb-3 mt-5">
-                      <h5>Shipping Address</h5>
-                    </div>
-                    <!-- Street Address -->
-                    <div class="mb-3">
-                      <label for="street" class="form-label">Street Address *</label>
-                      <input class="form-control" id="inputMessage" rows="4" placeholder="Street Address">
-                    </div>
-                    <!-- Country -->
-                    <div class="mb-3">
-                      <select class="form-select" aria-label="Country">
-                        <option selected>Country</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <!-- Town / City -->
-                    <div class="mb-3">
-                      <label for="town" class="form-label">Town / City *</label>
-                      <input class="form-control" id="" rows="4" placeholder="Town / City">
-                    </div>
-                    <!-- State -->
-                    <div class="row mb-3">
-                      <div class="col-md-6">
-                        <label for="state" class="form-label">State</label>
-                        <input type="text" class="form-control" id="state" placeholder="State">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="zip" class="form-label">Zip Code</label>
-                        <input type="text" class="form-control" id="zip" placeholder="Zip Code">
-                      </div>
-                    </div>
-          
-                    <div class="my-4">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="position: unset;">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Use a different billing address (optional)
-                        </label>
-                      </div>
-                    </div>
-          
-                    <div class="mb-3 mt-5">
-                      <h5>Payment Method</h5>
-                    </div>
-                    <!-- Credit Card -->
-                    <div class="mb-3 radio-button-wrapper credit-card">
-                      <div class="d-flex flex-row">
-                        <div class="form-check p-2 ">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">Pay by Credit Card </label>
-                        </div>
-                        <div class="ms-auto p-2 align-items-end">
-                          <i class="fa-regular fa-credit-card"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Paypal -->
-                    <div class="mb-3 radio-button-wrapper">
-                      <div class="d-flex flex-row">
-                        <div class="form-check p-2 ">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">Paypal </label>
-                        </div>
-                        <div class="ms-auto p-2 align-items-end">
-                          <i class="fa-brands fa-cc-paypal"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <hr class="my-4">
-                    <!-- Credit card input fields -->
-                    <div class="card-info">
-                      <!-- State and Zip Code -->
-                       
-                      <div class="mb-3">
-                        <label for="cardnumber" class="form-label">Card Number</label>
-                        <input class="form-control" rows="4" placeholder="1234 1234 1234">
-                      </div>
-          
-                      <div class="row mb-3">
-                        <div class="col-md-6">
-                          <label for="date" class="form-label">Expiration Date</label>
-                          <input type="text" class="form-control" id="date" placeholder="MM/YY">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="cvc" class="form-label">CVC</label>
-                          <input type="text" class="form-control" id="zipcode" placeholder="CVC Code">
-                        </div>
-                      </div>
+            <div class="col-lg-4">
+              <div class="mb-3 summary-wrapper">
+                <h5>Cart Summary</h5>
+                <!-- Free Shipping -->
+                <div class="d-flex flex-row mb-3 radio-btn-wrappper">
+                  <div class="p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="shipping" id="freeShipping" value="free">
+                      <label class="form-check-label" for="freeShipping">
+                        Free Shipping
+                      </label>
                     </div>
                   </div>
-                </div>
-          
-          
-                <div class="col-lg-4">
-                  <div class="mb-3 summary-wrapper ">
-                    
-                  <div class="cart-item checkout">
-                    <div class="table-responsive">
-                      <table class="table ">
-                          <thead>
-                              <tr>
-                                  <th scope="col" colspan="3">Order Summary</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr class="justify-content-center align-items-center">
-                                  <td>
-                                    <div class="d-flex flex-row">
-                                      <div class="p-2 product-cart-img">
-                                        <img src="img/item.png" alt="Product Image" class="img-fluid">
-                                      </div>
-                                    </td>
-                                  <td>
-                                    <div class="p-2">
-                                      <p>TB74 Bill Acceptor</p>
-                                      <div class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
-                                        <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
-                                            <button class="btn btn-outline-secondary" id="decreaseBtn"><i class="fas fa-minus"></i></button>
-                                            <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
-                                            <button class="btn btn-outline-secondary" id="increaseBtn"><i class="fas fa-plus"></i></button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </td>
-                                  <td><span class="txt-blue">$19.00</span>
-                                    <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p></td>
-                              </tr>
-                              <!-- Additional cart items can be added here -->
-                              <tr class="justify-content-center align-items-center">
-                                <td>
-                                  <div class="d-flex flex-row">
-                                    <div class="p-2 product-cart-img">
-                                      <img src="img/item.png" alt="Product Image" class="img-fluid">
-                                    </div>
-                                  </td>
-                                <td>
-                                  <div class="p-2">
-                                    <p>TB74 Bill Acceptor</p>
-                                    <div class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
-                                      <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
-                                          <button class="btn btn-outline-secondary" id="decreaseBtn"><i class="fas fa-minus"></i></button>
-                                          <input type="text" class="form-control text-center" id="quantityInput" value="1" readonly>
-                                          <button class="btn btn-outline-secondary" id="increaseBtn"><i class="fas fa-plus"></i></button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td><span class="txt-blue">$19.00</span>
-                                  <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p></td>
-                            </tr>
-                          </tbody>
-                      </table>
-                      <div class="input-group flex-nowrap checkout-coupon">
-                        <input type="text" class="form-control input-coupon" placeholder="Enter coupon code" aria-label="Enter coupon code" aria-describedby="addon-wrapping">
-                        <button class="btn btn-primary">Apply</button>
-                      </div>
-                    </div>
-                  </div>
-                    <!-- Coupon -->
-                    <hr>
-                    <div class="d-flex flex-row mb-3">
-                      <div class="p-2">
-                        <span><i class="fa-solid fa-ticket"></i> JenkateMW</span>
-                      </div>
-                      <div class="ms-auto p-2 align-items-end">
-                        <span class="txt-blue">PHP0.00 [Remove]</span>
-                      </div>
-                    </div>
-                    <hr>
-                    <!-- Shipping -->
-                    <div class="d-flex flex-row mb-3">
-                      <div class="p-2">
-                        <span>Shipping</span>
-                      </div>
-                      <div class="ms-auto p-2 align-items-end">
-                        <span class="txt-green">FREE</span>
-                      </div>
-                    </div>
-                    <hr>
-                    <!-- Subtotal -->
-                    <div class="d-flex flex-row mb-3">
-                      <div class="p-2">
-                        <span>Subtotal</span>
-                      </div>
-                      <div class="ms-auto p-2 align-items-end">
-                        <span class="txt-blue">PHP0.00</span>
-                      </div>
-                    </div>
-                    <hr>
-                    <!-- Total -->
-                    <div class="d-flex flex-row mb-3">
-                      <div class="p-2">
-                        <span>Total</span>
-                      </div>
-                      <div class="ms-auto p-2 align-items-end">
-                        <span class="txt-blue">PHP0.00</span>
-                      </div>
-                    </div>
+                  <div class="ms-auto p-2 align-items-end">
+                    <span class="txt-blue">PHP0.00</span>
                   </div>
                 </div>
+                <!-- Express Shipping -->
+                <div class="d-flex flex-row mb-3 radio-btn-wrappper">
+                  <div class="p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="express" id="express" value="express">
+                      <label class="form-check-label" for="express">
+                        Express Shipping
+                      </label>
+                    </div>
+                  </div>
+                  <div class="ms-auto p-2 align-items-end">
+                    <span class="txt-blue">PHP0.00</span>
+                  </div>
+                </div>
+                <!-- Pickup -->
+                <div class="d-flex flex-row mb-3 radio-btn-wrappper">
+                  <div class="p-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="pickup" id="pickup" value="pickup">
+                      <label class="form-check-label" for="pickup">
+                        Pick Up
+                      </label>
+                    </div>
+                  </div>
+                  <div class="ms-auto p-2 align-items-end">
+                    <span class="txt-blue">PHP0.00</span>
+                  </div>
+                </div>
+                <!-- Subtotal -->
+                <div class="d-flex flex-row mb-3">
+                  <div class="p-2">
+                    <span>Subtotal</span>
+                  </div>
+                  <div class="ms-auto p-2 align-items-end">
+                    <span class="txt-blue">PHP0.00</span>
+                  </div>
+                </div>
+                <!-- Total -->
+                <div class="d-flex flex-row mb-3">
+                  <div class="p-2">
+                    <span>Total</span>
+                  </div>
+                  <div class="ms-auto p-2 align-items-end">
+                    <span class="txt-blue">PHP0.00</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Write Review</button>
               </div>
-              <!-- Next and Previous Button -->
-              <div class="text-center mt-5">
-                <button type="button" class="btn btn-secondary prev-step">Back to Shopping Cart</button>
-                <button type="button" class="btn btn-primary next-step btn-submit">Place Order</button>
+              <div class="mb-3 coupon-wrapper">
+                <h5>Apply Coupon</h5>
+                <p>Add your code for an instant cart discount</p>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-ticket"></i></span>
+                  <input type="text" class="form-control" placeholder="Enter coupon code"
+                    aria-label="Enter coupon code"" aria-describedby=" addon-wrapping">
+                  <button class="btn btn-primary btn-coupon">Apply</button>
+                </div>
               </div>
             </div>
-            <div class="step-content d-none" id="step-3">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="mb-3 summary-wrapper thankyou-wrapper">
-                    <div class="row">
-                      <h3 class="text-center text-dark">Thank you! 🎉</h3>
-                      <h6 class="text-center">Your order has been received</h6>
-                    </div>
-          
-                   <div class="row">
-                      <!-- Items -->
-                        <div class="col-lg-6">
-                          <div class="d-md-inline d-flex flex-column myrow">
-          
-                            <div class="list-item justify-content-start align-items-center d-flex flex-md-row">
-                              <div class="p-2 product-cart-img" >
-                                <img src="img/item.png" alt="Product Image" class="img-fluid">
-                                <span class="position-absolute top-0 start-100 translate-middle rounded-circle order-badge">
-                                  <span>1</span>
-                                </span>
-                              </div>
-                              <div class="d-none d-sm-block">TBT4 Bill Acceptor * <small>New</small></div>
-                            </div>
-                            <!-- list item -->
-                             
-                            <div class="list-item justify-content-start align-items-center d-flex flex-md-row">
-                              <div class="p-2 product-cart-img" >
-                                <img src="img/item.png" alt="Product Image" class="img-fluid">
-                                <span class="position-absolute top-0 start-100 translate-middle rounded-circle order-badge">
-                                  <span>2</span>
-                                </span>
-                              </div>
-                              <div class="d-none d-sm-block">Retailer's Sim Card Pack</div>
-                            </div>
-                            <!-- list item -->
-                             
-                            <div class="list-item justify-content-start align-items-center d-flex flex-md-row">
-                              <div class="p-2 product-cart-img" >
-                                <img src="img/item.png" alt="Product Image" class="img-fluid">
-                                <span class="position-absolute top-0 start-100 translate-middle rounded-circle order-badge">
-                                  <span>3</span>
-                                </span>
-                              </div>
-                              <div class="d-none d-sm-block">Universal Coin Slot Machine</div>
-                            </div>
-                          </div>
-                        </div>
-          
-                        <div class="col-lg-6">
-                          <div class="table-cost-wrapper">
-                            <table>
-                              <tr>
-                                <td class="td-title">Order code:</td>
-                                <td><b>#0123_45678</b></td>
-                              </tr>
-                              <tr>
-                                <td class="td-title">Date</td>
-                                <td><b>October 19, 2023</b></td>
-                              </tr>
-                              <tr>
-                                <td class="td-title">Total</td>
-                                <td><b>$1,345.00</b></td>
-                              </tr>
-                              <tr>
-                                <td class="td-title">Payment method:</td>
-                                <td><b>Credit Card</b></td>
-                              </tr>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                   </div>
-                </div>
-                <!-- Previous and submit button -->
-                <div class="text-center mt-5">
-                  <button type="submit" class="btn btn-success btn-submit">Purchase History</button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <div class="container mt-5">
-        <div class="thank-you-message d-none">
-            <h3 class="text-center mb-5">Display All Transactions Here!</h3>
-        </div>
-    </div>
-
-      <!-- Footer -->
-      <footer class="footer text-white pt-6 footer-bg  mt-auto ">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
-                    <div class="mt-4 pe-lg-5">It started with a crazy idea, and is 
-                        now being used by thousands of people nationwide and in other countries.</div>
-                </div>
-                <div class="col-md-6 col-sm-6 mb-3">
-                    <h5 class="text-white">Quicklinks</h5>
-                    <div classs="d-flex flex-wrap align-items-center justify-content-center">
-                        <div class="row">
-                            <div class="col">
-                                <ul class="list-unstyled col-4">
-                                    <li><a href="#" class="text-white">Home</a></li>
-                                    <li><a href="#" class="text-white">DafoxTech</a></li>
-                                    <li><a href="#" class="text-white">AdoPisoft</a></li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul class="list-unstyled col-4">
-                                    <li><a href="#" class="text-white">On Sale</a></li>
-                                    <li><a href="#" class="text-white">Blog and Events</a></li>
-                                    <li><a href="#" class="text-white">FAQs</a></li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                              <ul class="list-unstyled col-4">
-                                <li><a href="#" class="text-white">On Sale</a></li>
-                                <li><a href="#" class="text-white">Blog and Events</a></li>
-                                <li><a href="#" class="text-white">FAQs</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <h5 class="text-white">Newsletter</h5>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="newsletterEmail" class="sr-only">Email address</label>
-                            <input type="email" class="form-control bradius" id="newsletterEmail" placeholder="Enter email" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-cta bradius">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="divider mt-5 py-2">
-          <div class="container">
-            <div class="row">
-              <div class="col-6 justify-content-start"><a href="" class="text-white"><b> &copy; 2024, Flarego</b> Online Store. Powered by Shopify</a></div>
-              <div class="col-6 text-end">We accept payments via <img src="img/payment-gateway.png" alt=""></div>
-            </div>
-
           </div>
         </div>
-    </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            let currentStep = 1;
-            const totalSteps = 3;
+        <!-- Next BUTTON -->
+        <div class="text-center mt-5">
+          <button type="button" class="btn btn-primary next-step btn-submit">Checkout</button>
+        </div>
+      </div>
 
-            function updateStepWizard() {
-                $('.step').each(function (index) {
-                    if (index < currentStep) {
-                        $(this).addClass('completed');
-                    } else {
-                        $(this).removeClass('completed');
-                    }
-                });
-            }
+      <!-- Checkout -->
+      <div class="step-content d-none" id="step-2">
+        <div class="row">
+          <!-- Checkout Form -->
+          <div class="col-lg-8 checkout-wrapper">
+            <div>
+              <div class="mb-3">
+                <h5>Contact Information</h5>
+              </div>
+              <!-- Name -->
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="firstname" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                </div>
+                <div class="col-md-6">
+                  <label for="lastname" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                </div>
+              </div>
+              <!-- Number -->
+              <div class="mb-3">
+                <label for="number" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number">
+              </div>
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+              </div>
+              <div class="mb-3 mt-5">
+                <h5>Shipping Address</h5>
+              </div>
+              <!-- Street Address -->
+              <div class="mb-3">
+                <label for="street" class="form-label">Street Address *</label>
+                <input class="form-control" id="inputMessage" rows="4" placeholder="Street Address">
+              </div>
+              <!-- Country -->
+              <div class="mb-3">
+                <select class="form-select" aria-label="Country">
+                  <option selected>Country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <!-- Town / City -->
+              <div class="mb-3">
+                <label for="town" class="form-label">Town / City *</label>
+                <input class="form-control" id="" rows="4" placeholder="Town / City">
+              </div>
+              <!-- State -->
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="state" class="form-label">State</label>
+                  <input type="text" class="form-control" id="state" placeholder="State">
+                </div>
+                <div class="col-md-6">
+                  <label for="zip" class="form-label">Zip Code</label>
+                  <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                </div>
+              </div>
 
-            function showStep(step) {
-                $('.step-content').addClass('d-none');
-                $('#step-' + step).removeClass('d-none');
-                updateStepWizard();
-            }
+              <div class="my-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                    style="position: unset;">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Use a different billing address (optional)
+                  </label>
+                </div>
+              </div>
 
-            $('.next-step').on('click', function () {
-                if (currentStep < totalSteps) {
-                    currentStep++;
-                    showStep(currentStep);
-                }
-            });
+              <div class="mb-3 mt-5">
+                <h5>Payment Method</h5>
+              </div>
+              <!-- Credit Card -->
+              <div class="mb-3 radio-button-wrapper credit-card">
+                <div class="d-flex flex-row">
+                  <div class="form-check p-2 ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Pay by Credit Card </label>
+                  </div>
+                  <div class="ms-auto p-2 align-items-end">
+                    <i class="fa-regular fa-credit-card"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- Paypal -->
+              <div class="mb-3 radio-button-wrapper">
+                <div class="d-flex flex-row">
+                  <div class="form-check p-2 ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Paypal </label>
+                  </div>
+                  <div class="ms-auto p-2 align-items-end">
+                    <i class="fa-brands fa-cc-paypal"></i>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <!-- Credit card input fields -->
+              <div class="card-info">
+                <!-- State and Zip Code -->
 
-            $('.prev-step').on('click', function () {
-                if (currentStep > 1) {
-                    currentStep--;
-                    showStep(currentStep);
-                }
-            });
+                <div class="mb-3">
+                  <label for="cardnumber" class="form-label">Card Number</label>
+                  <input class="form-control" rows="4" placeholder="1234 1234 1234">
+                </div>
 
-            $('#multiStepForm').on('submit', function (e) {
-                e.preventDefault();
-                $('#multiStepForm').addClass('d-none');
-                $('.thank-you-message').removeClass('d-none');
-            });
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="date" class="form-label">Expiration Date</label>
+                    <input type="text" class="form-control" id="date" placeholder="MM/YY">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="cvc" class="form-label">CVC</label>
+                    <input type="text" class="form-control" id="zipcode" placeholder="CVC Code">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            showStep(currentStep);
+
+          <div class="col-lg-4">
+            <div class="mb-3 summary-wrapper ">
+
+              <div class="cart-item checkout">
+                <div class="table-responsive">
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="3">Order Summary</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="justify-content-center align-items-center">
+                        <td>
+                          <div class="d-flex flex-row">
+                            <div class="p-2 product-cart-img">
+                              <img src="img/item.png" alt="Product Image" class="img-fluid">
+                            </div>
+                        </td>
+                        <td>
+                          <div class="p-2">
+                            <p>TB74 Bill Acceptor</p>
+                            <div
+                              class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
+                              <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
+                                <button class="btn btn-outline-secondary" id="decreaseBtn"><i
+                                    class="fas fa-minus"></i></button>
+                                <input type="text" class="form-control text-center" id="quantityInput" value="1"
+                                  readonly>
+                                <button class="btn btn-outline-secondary" id="increaseBtn"><i
+                                    class="fas fa-plus"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="txt-blue">$19.00</span>
+                          <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                        </td>
+                      </tr>
+                      <!-- Additional cart items can be added here -->
+                      <tr class="justify-content-center align-items-center">
+                        <td>
+                          <div class="d-flex flex-row">
+                            <div class="p-2 product-cart-img">
+                              <img src="img/item.png" alt="Product Image" class="img-fluid">
+                            </div>
+                        </td>
+                        <td>
+                          <div class="p-2">
+                            <p>TB74 Bill Acceptor</p>
+                            <div
+                              class="quantity-selector justify-content-center align-items-center d-flex flex-md-row mb-3">
+                              <div class="btn-qty justify-content-center align-items-center d-flex flex-md-row">
+                                <button class="btn btn-outline-secondary" id="decreaseBtn"><i
+                                    class="fas fa-minus"></i></button>
+                                <input type="text" class="form-control text-center" id="quantityInput" value="1"
+                                  readonly>
+                                <button class="btn btn-outline-secondary" id="increaseBtn"><i
+                                    class="fas fa-plus"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span class="txt-blue">$19.00</span>
+                          <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="input-group flex-nowrap checkout-coupon">
+                    <input type="text" class="form-control input-coupon" placeholder="Enter coupon code"
+                      aria-label="Enter coupon code" aria-describedby="addon-wrapping">
+                    <button class="btn btn-primary">Apply</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Coupon -->
+              <hr>
+              <div class="d-flex flex-row mb-3">
+                <div class="p-2">
+                  <span><i class="fa-solid fa-ticket"></i> JenkateMW</span>
+                </div>
+                <div class="ms-auto p-2 align-items-end">
+                  <span class="txt-blue">PHP0.00 [Remove]</span>
+                </div>
+              </div>
+              <hr>
+              <!-- Shipping -->
+              <div class="d-flex flex-row mb-3">
+                <div class="p-2">
+                  <span>Shipping</span>
+                </div>
+                <div class="ms-auto p-2 align-items-end">
+                  <span class="txt-green">FREE</span>
+                </div>
+              </div>
+              <hr>
+              <!-- Subtotal -->
+              <div class="d-flex flex-row mb-3">
+                <div class="p-2">
+                  <span>Subtotal</span>
+                </div>
+                <div class="ms-auto p-2 align-items-end">
+                  <span class="txt-blue">PHP0.00</span>
+                </div>
+              </div>
+              <hr>
+              <!-- Total -->
+              <div class="d-flex flex-row mb-3">
+                <div class="p-2">
+                  <span>Total</span>
+                </div>
+                <div class="ms-auto p-2 align-items-end">
+                  <span class="txt-blue">PHP0.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Next and Previous Button -->
+        <div class="text-center mt-5">
+          <button type="button" class="btn btn-secondary prev-step">Back to Shopping Cart</button>
+          <button type="button" class="btn btn-primary next-step btn-submit">Place Order</button>
+        </div>
+      </div>
+      <div class="step-content d-none" id="step-3">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mb-3 summary-wrapper thankyou-wrapper">
+              <div class="row">
+                <h3 class="text-center text-dark">Thank you! 🎉</h3>
+                <h6 class="text-center">Your order has been received</h6>
+              </div>
+
+              <div class="row">
+                <!-- Items -->
+                <div class="col-lg-6">
+                  <div class="d-md-inline d-flex flex-column myrow">
+
+                    <div class="list-item justify-content-start align-items-center d-flex flex-md-row">
+                      <div class="p-2 product-cart-img">
+                        <img src="img/item.png" alt="Product Image" class="img-fluid">
+                        <span class="position-absolute top-0 start-100 translate-middle rounded-circle order-badge">
+                          <span>1</span>
+                        </span>
+                      </div>
+                      <div class="d-none d-sm-block">TBT4 Bill Acceptor * <small>New</small></div>
+                    </div>
+                    <!-- list item -->
+
+                    <div class="list-item justify-content-start align-items-center d-flex flex-md-row">
+                      <div class="p-2 product-cart-img">
+                        <img src="img/item.png" alt="Product Image" class="img-fluid">
+                        <span class="position-absolute top-0 start-100 translate-middle rounded-circle order-badge">
+                          <span>2</span>
+                        </span>
+                      </div>
+                      <div class="d-none d-sm-block">Retailer's Sim Card Pack</div>
+                    </div>
+                    <!-- list item -->
+
+                    <div class="list-item justify-content-start align-items-center d-flex flex-md-row">
+                      <div class="p-2 product-cart-img">
+                        <img src="img/item.png" alt="Product Image" class="img-fluid">
+                        <span class="position-absolute top-0 start-100 translate-middle rounded-circle order-badge">
+                          <span>3</span>
+                        </span>
+                      </div>
+                      <div class="d-none d-sm-block">Universal Coin Slot Machine</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="table-cost-wrapper">
+                    <table>
+                      <tr>
+                        <td class="td-title">Order code:</td>
+                        <td><b>#0123_45678</b></td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">Date</td>
+                        <td><b>October 19, 2023</b></td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">Total</td>
+                        <td><b>$1,345.00</b></td>
+                      </tr>
+                      <tr>
+                        <td class="td-title">Payment method:</td>
+                        <td><b>Credit Card</b></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Previous and submit button -->
+        <div class="text-center mt-5">
+          <button type="submit" class="btn btn-success btn-submit">Purchase History</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container mt-5">
+    <div class="thank-you-message d-none">
+      <h3 class="text-center mb-5">Display All Transactions Here!</h3>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-white pt-6 footer-bg  mt-auto ">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-3 col-sm-6 mb-3">
+          <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+          <div class="mt-4 pe-lg-5">It started with a crazy idea, and is
+            now being used by thousands of people nationwide and in other countries.</div>
+        </div>
+        <div class="col-md-6 col-sm-6 mb-3">
+          <h5 class="text-white">Quicklinks</h5>
+          <div classs="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="row">
+              <div class="col">
+                <ul class="list-unstyled col-4">
+                  <li><a href="#" class="text-white">Home</a></li>
+                  <li><a href="#" class="text-white">DafoxTech</a></li>
+                  <li><a href="#" class="text-white">AdoPisoft</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-unstyled col-4">
+                  <li><a href="#" class="text-white">On Sale</a></li>
+                  <li><a href="#" class="text-white">Blog and Events</a></li>
+                  <li><a href="#" class="text-white">FAQs</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-unstyled col-4">
+                  <li><a href="#" class="text-white">On Sale</a></li>
+                  <li><a href="#" class="text-white">Blog and Events</a></li>
+                  <li><a href="#" class="text-white">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <h5 class="text-white">Newsletter</h5>
+          <form>
+            <div class="form-group mb-3">
+              <label for="newsletterEmail" class="sr-only">Email address</label>
+              <input type="email" class="form-control bradius" id="newsletterEmail" placeholder="Enter email" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-cta bradius">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="divider mt-5 py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 justify-content-start"><a href="" class="text-white"><b> &copy; 2024, Flarego</b> Online
+              Store. Powered by Shopify</a></div>
+          <div class="col-6 text-end">We accept payments via <img src="img/payment-gateway.png" alt=""></div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      let currentStep = 1;
+      const totalSteps = 3;
+
+      function updateStepWizard() {
+        $('.step').each(function (index) {
+          if (index < currentStep) {
+            $(this).addClass('completed');
+          } else {
+            $(this).removeClass('completed');
+          }
         });
+      }
 
-        document.getElementById('increaseBtn').addEventListener('click', function() {
-        var quantityInput = document.getElementById('quantityInput');
-        var currentQuantity = parseInt(quantityInput.value);
-        quantityInput.value = currentQuantity + 1;
+      function showStep(step) {
+        $('.step-content').addClass('d-none');
+        $('#step-' + step).removeClass('d-none');
+        updateStepWizard();
+      }
+
+      $('.next-step').on('click', function () {
+        if (currentStep < totalSteps) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      });
+
+      $('.prev-step').on('click', function () {
+        if (currentStep > 1) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      });
+
+      $('#multiStepForm').on('submit', function (e) {
+        e.preventDefault();
+        $('#multiStepForm').addClass('d-none');
+        $('.thank-you-message').removeClass('d-none');
+      });
+
+      showStep(currentStep);
     });
 
-    document.getElementById('decreaseBtn').addEventListener('click', function() {
-        var quantityInput = document.getElementById('quantityInput');
-        var currentQuantity = parseInt(quantityInput.value);
-        if (currentQuantity > 1) {
-            quantityInput.value = currentQuantity - 1;
-        }
+    document.getElementById('increaseBtn').addEventListener('click', function () {
+      var quantityInput = document.getElementById('quantityInput');
+      var currentQuantity = parseInt(quantityInput.value);
+      quantityInput.value = currentQuantity + 1;
+    });
+
+    document.getElementById('decreaseBtn').addEventListener('click', function () {
+      var quantityInput = document.getElementById('quantityInput');
+      var currentQuantity = parseInt(quantityInput.value);
+      if (currentQuantity > 1) {
+        quantityInput.value = currentQuantity - 1;
+      }
     });
 
     // Show Hide Payment for credit card
-    document.querySelector('.credit-card').addEventListener('click', function() {
-        const contentDiv = document.querySelector('.card-info');
-        if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
-            contentDiv.style.display = 'block';
-        } else {
-            contentDiv.style.display = 'none';
-        }
+    document.querySelector('.credit-card').addEventListener('click', function () {
+      const contentDiv = document.querySelector('.card-info');
+      if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
+        contentDiv.style.display = 'block';
+      } else {
+        contentDiv.style.display = 'none';
+      }
     });
     // Radio button
-    $(document).ready(function(){
-        $('.radio-button-wrapper').click(function(){
-          $(this).find('input[type=radio]').prop('checked', true);
-        });
+    $(document).ready(function () {
+      $('.radio-button-wrapper').click(function () {
+        $(this).find('input[type=radio]').prop('checked', true);
       });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
