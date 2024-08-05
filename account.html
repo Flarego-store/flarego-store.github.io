@@ -70,8 +70,9 @@
               </div>
               <!-- Cart Menu -->
               <ul class="nav col-12 col-lg-4 justify-content-end">
-                <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i> Sign In</a></li>
+                <li><a href="./account.html" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i> Sign In</a></li>
                 <li>
+                  
                   <a href="#" class="nav-link px-2 text-white">
                     <i class="fa-regular fa-heart"></i>
                     <!-- Badge -->
@@ -79,7 +80,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link px-2 text-white">
+                  <a href="./cart.html" class="nav-link px-2 text-white">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <!-- Badge -->
                     <span class="badge rounded-pill bg-purple ">3</span> Cart
@@ -108,7 +109,7 @@
               </div>
 
               <ul class="nav col-12 col-lg-6 justify-content-center">
-                <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">DafoxTech</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">AdoPisoft</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
@@ -251,15 +252,37 @@
             </div>
             <!-- Account Dropdown Select On Mobile -->
             <div class="d-block d-md-none">
-              <form action="">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Account</option>
-                  <option value="1">Address</option>
-                  <option value="2">Orders</option>
-                  <option value="3">Wishlist</option>
-                  <option value="4">Logout</option>
-                </select>
-              </form>
+              <ul class="nav nav-tabs mb-3 d-flex justify-content-center" id="navMobile" role="tablist">
+                <li class="nav-item dropdown" role="presentation">
+                  <a id="dropName" class="btn dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accounts <span class="caret"></span></a>
+                  <ul class="dropdown-menu" id="menues">
+                    <li class="nav-item drop-item">
+                      <button class="dropdown-item btn active" id="account-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab" aria-controls="accounts" aria-selected="true">
+                      Accounts
+                      </button>
+                    </li>
+                    <li class="nav-item drop-item">
+                      <button class="dropdown-item btn" id="account-address-tab" data-bs-toggle="tab" data-bs-target="#account-address" type="button" role="tab" aria-controls="account-address" aria-selected="false">
+                      Address
+                      </button>
+                    </li>
+                    <li class="nav-item drop-item">
+                      <button class="dropdown-item btn" data-bs-toggle="tab" type="button" role="tab" id="account-orders-tab"
+                      data-bs-target="#account-orders"
+                      aria-controls="account-orders" aria-selected="false">
+                      Orders
+                      </button>
+                    </li>
+                    <li class="nav-item drop-item">
+                      <button class="dropdown-item btn" data-bs-toggle="tab" type="button" role="tab" id="account-wishlist-tab"
+                      data-bs-target="#account-wishlist"
+                      aria-controls="account-wishlist" aria-selected="false">
+                      Wishlist
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -267,7 +290,7 @@
           <div class="tab-content" id="v-pills-tabContent">
             <!-- Account Details -->
             <div class="tab-pane fade show active" id="accounts" role="tabpanel" aria-labelledby="accounts-tab">
-              <form class="account-form  px-md-5">
+              <form class="account-form px-md-5">
                 <div class="mb-3">
                   <h5>Account Details</h5>
                 </div>
@@ -531,6 +554,18 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $("#menues li").click(function(){
+        $('#dropName').html($(this).text() + '<span class="caret"></span>')
+      });
+
+      $(".dropdown-item").on("click", function() {
+        $(this).attr("aria-selected", "true");
+        $(this).addClass("active");
+        $(".dropdown-item").not(this).attr("aria-selected", "false");
+        $(".dropdown-item").not(this).removeClass("active");
+      })
+    </script>
   </body>
 
   </html>
