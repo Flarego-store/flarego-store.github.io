@@ -22,7 +22,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <!-- FontAwesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
     <title>Home</title>
   </head>
@@ -50,7 +50,7 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
               <!-- Logo -->
               <div class="col-lg-4">
-                <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+                <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a>
               </div>
               <!-- Form -->
               <div class="col-12 col-lg-4">
@@ -110,8 +110,8 @@
 
               <ul class="nav col-12 col-lg-6 justify-content-center">
                 <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">DafoxTech</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">AdoPisoft</a></li>
+                <li><a href="./dafox-product-listing-page.html" class="nav-link px-2 text-white">DafoxTech</a></li>
+                <li><a href="./adopisoft-product-listing.html" class="nav-link px-2 text-white">AdoPisoft</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
@@ -148,20 +148,20 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
               <!-- Logo -->
               <div class="col-lg-4 col-4">
-                <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
+                <a href="./index.html"><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
               </div>
               <!-- Cart Menu -->
               <ul class="nav col-8 col-lg-4 justify-content-end">
                 <li><a href="#" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i></a></li>
                 <li>
-                  <a href="#" class="nav-link px-2 text-white">
+                  <a href="#wishlist" class="nav-link px-2 text-white">
                     <i class="fa-regular fa-heart"></i>
                     <!-- Badge -->
                     <span class="badge rounded-pill bg-purple ">3</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link px-2 text-white">
+                  <a href="./cart.html" class="nav-link px-2 text-white">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <!-- Badge -->
                     <span class="badge rounded-pill bg-purple ">3</span>
@@ -202,13 +202,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">DafoxTech</a>
+                      <a class="nav-link" href="./dafox-product-listing-page.html">DafoxTech</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">AdoPisoft</a>
+                      <a class="nav-link" href="./adopisoft-product-listing.html">AdoPisoft</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">On Sale</a>
@@ -252,29 +252,31 @@
             </div>
             <!-- Account Dropdown Select On Mobile -->
             <div class="d-block d-md-none">
-              <ul class="nav nav-tabs mb-3 d-flex justify-content-center" id="navMobile" role="tablist">
-                <li class="nav-item dropdown" role="presentation">
-                  <a id="dropName" class="btn dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accounts <span class="caret"></span></a>
-                  <ul class="dropdown-menu" id="menues">
+              <ul class="nav nav-tabs d-flex justify-content-center" id="navMobile" role="tablist">
+                <li class="nav-item dropdown account-option" role="presentation">
+                  
+                  <a id="dropName" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accounts<span><i class="fa-solid fa-angle-down fa-2xs"></i></span></a>
+                
+                  <ul class="dropdown-menu rounded shadow border border-white mt-3" id="menues">
                     <li class="nav-item drop-item">
-                      <button class="dropdown-item btn active" id="account-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab" aria-controls="accounts" aria-selected="true">
+                      <button class="dropdown-item active btn rounded p-2" id="account-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab" aria-controls="accounts" aria-selected="true">
                       Accounts
                       </button>
                     </li>
                     <li class="nav-item drop-item">
-                      <button class="dropdown-item btn" id="account-address-tab" data-bs-toggle="tab" data-bs-target="#account-address" type="button" role="tab" aria-controls="account-address" aria-selected="false">
-                      Address
+                      <button class="dropdown-item btn rounded p-2" id="account-address-tab" data-bs-toggle="tab" data-bs-target="#account-address" type="button" role="tab" aria-controls="account-address" aria-selected="false">
+                      Address 
                       </button>
                     </li>
                     <li class="nav-item drop-item">
-                      <button class="dropdown-item btn" data-bs-toggle="tab" type="button" role="tab" id="account-orders-tab"
+                      <button class="dropdown-item btn rounded p-2" data-bs-toggle="tab" type="button" role="tab" id="account-orders-tab"
                       data-bs-target="#account-orders"
                       aria-controls="account-orders" aria-selected="false">
                       Orders
                       </button>
                     </li>
                     <li class="nav-item drop-item">
-                      <button class="dropdown-item btn" data-bs-toggle="tab" type="button" role="tab" id="account-wishlist-tab"
+                      <button class="dropdown-item btn rounded p-2" data-bs-toggle="tab" type="button" role="tab" id="account-wishlist-tab"
                       data-bs-target="#account-wishlist"
                       aria-controls="account-wishlist" aria-selected="false">
                       Wishlist
@@ -556,7 +558,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
       $("#menues li").click(function(){
-        $('#dropName').html($(this).text() + '<span class="caret"></span>')
+        $('#dropName').html($(this).text() + '<span><i class="fa-solid fa-angle-down fa-2xs"></i></span>')
       });
 
       $(".dropdown-item").on("click", function() {

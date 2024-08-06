@@ -1387,3 +1387,19 @@ padding: 15px;
         width: 100%;
     }
 }
+
+.account-option{
+    border: 3px solid #BBB8E2;
+    border-radius: 12px;
+    background-color: white;
+    width:100%;
+}
+
+#dropName span{
+    padding-left: 14rem;
+}
+
+#menues{
+    width: 100%;
+    margin: 0;
+}
