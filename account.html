@@ -252,42 +252,21 @@
             </div>
             <!-- Account Dropdown Select On Mobile -->
             <div class="d-block d-md-none">
-              <ul class="nav nav-tabs d-flex justify-content-center" id="navMobile" role="tablist">
-                <li class="nav-item dropdown account-option" role="presentation">
-                  
-                  <a id="dropName" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accounts<span><i class="fa-solid fa-angle-down fa-2xs"></i></span></a>
-                
-                  <ul class="dropdown-menu rounded shadow border border-white mt-3" id="menues">
-                    <li class="nav-item drop-item">
-                      <button class="dropdown-item active btn rounded p-2" id="account-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab" aria-controls="accounts" aria-selected="true">
-                      Accounts
-                      </button>
-                    </li>
-                    <li class="nav-item drop-item">
-                      <button class="dropdown-item btn rounded p-2" id="account-address-tab" data-bs-toggle="tab" data-bs-target="#account-address" type="button" role="tab" aria-controls="account-address" aria-selected="false">
-                      Address 
-                      </button>
-                    </li>
-                    <li class="nav-item drop-item">
-                      <button class="dropdown-item btn rounded p-2" data-bs-toggle="tab" type="button" role="tab" id="account-orders-tab"
-                      data-bs-target="#account-orders"
-                      aria-controls="account-orders" aria-selected="false">
-                      Orders
-                      </button>
-                    </li>
-                    <li class="nav-item drop-item">
-                      <button class="dropdown-item btn rounded p-2" data-bs-toggle="tab" type="button" role="tab" id="account-wishlist-tab"
-                      data-bs-target="#account-wishlist"
-                      aria-controls="account-wishlist" aria-selected="false">
-                      Wishlist
-                      </button>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              <select id="navSelect" class="form-select" aria-label="Account">
+                <option selected value="account" data-content-id="accounts">Account</option>
+                <option value="address" data-content-id="account-address">Address</option>
+                <option value="orders" data-content-id="account-orders">Orders</option>
+                <option value="wishlist" data-content-id="account-wishlist">Wishlist</option>
+                <option value="5">Logout</option>
+              </select>
             </div>
           </div>
         </div>
+        <div class="d-md-none d-block">
+        <div id="nav-container">
+
+        </div>
+      </div>
         <div class="col-md-9">
           <div class="tab-content" id="v-pills-tabContent">
             <!-- Account Details -->
@@ -297,7 +276,7 @@
                   <h5>Account Details</h5>
                 </div>
                 <!-- First Name -->
-                <div class=" mb-3">
+                <div class="mb-3">
                   <label for="firstname" class="form-label">First Name *</label>
                   <input type="text" class="form-control" id="firstname" placeholder="First Name">
                 </div>
@@ -557,17 +536,31 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
-      $("#menues li").click(function(){
-        $('#dropName').html($(this).text() + '<span><i class="fa-solid fa-angle-down fa-2xs"></i></span>')
+      const navSelect=document.getElementById("navSelect");
+      const navContainer=document.getElementById("nav-container");
+      
+      function renderTab(selectedOption){
+        const contentId = selectedOption.getAttribute('data-content-id');
+        const contentElement = document.getElementById(contentId);
+       navContainer.innerHTML = contentElement.innerHTML;
+       if(contentElement.className=="active" ){
+       contentElement.classList.add("active");
+       }else{
+        contentElement.classList.remove("active");
+       }
+      }
+
+      // Add event listener to the select element
+      navSelect.addEventListener('change', (e) => {
+        const selectedOption = e.target.options[e.target.selectedIndex];
+        renderTab(selectedOption);
       });
 
-      $(".dropdown-item").on("click", function() {
-        $(this).attr("aria-selected", "true");
-        $(this).addClass("active");
-        $(".dropdown-item").not(this).attr("aria-selected", "false");
-        $(".dropdown-item").not(this).removeClass("active");
-      })
+      // Render the default tab
+      const defaultOption = navSelect.options[navSelect.selectedIndex];
+      renderTab(defaultOption);
     </script>
+   
   </body>
 
   </html>
