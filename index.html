@@ -1,0 +1,2307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>Flarego Online Shop | Build Your Own Business</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section class="header-wrapper">
+    <header class="d-none d-md-block">
+      <div class="header-bg text-white">
+        <!-- Top Header -->
+        <div class="top-header py-2">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <div class="col-lg-6 col-6 text-start">
+                <a href="#" class="text-white me-4"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
+                <a href="#" class="text-white "><i class="fa-regular fa-envelope me-2"></i>
+                  faregoshoponline@gmail.com</a>
+              </div>
+              <div class="col-lg-6 col-6 text-end "><i class="fa-solid fa-map-location-dot"></i> Track Order</div>
+            </div>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="container custom-container py-3">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!-- Logo -->
+            <div class="col-lg-3 justify-content-start">
+              <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a>
+            </div>
+            <!-- Form -->
+            <div class="col-lg-6 justify-content-center">
+              <form>
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <label class="sr-only fs-6" for="inlineFormInputGroup">Search products here</label>
+                    <div class="input-group mb-2 searchform-wrapper">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text searchico">
+                          <i class="ps-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-search" viewBox="0 0 16 16">
+                              <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                          </i>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control fs-7" id="inlineFormInputGroup"
+                        placeholder="Search products here">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Cart Menu -->
+            <ul class="nav justify-content-end col-lg-3  text-end">
+              <li><a href="./account.html" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i> Sign In</a></li>
+              <li>
+                <a href="#" class="nav-link px-2 text-white">
+                  <i class="fa-regular fa-heart"></i>
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-purple">3</span> Wishlist
+                </a>
+              </li>
+              <li>
+                <a href="./cart.html" class="nav-link px-2 text-white">
+                  <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-bag" viewBox="0 0 16 16">
+                      <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg></i>
+                  <!-- Badge -->
+                  
+                  <span class="badge rounded-pill bg-purple">3</span> Cart
+                </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Main Menu -->
+      <div class="lower-bg py-2">
+        <div class="container custom-container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <div class="col-lg-3">
+              <div class="dropdown show">
+                <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All Categories <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav col-12 col-lg-6 justify-content-center">
+              <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="./dafox-product-listing-page.html" class="nav-link px-2 text-white">DafoxTech</a></li>
+              <li><a href="./adopisoft-product-listing.html" class="nav-link px-2 text-white">AdoPisoft</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            </ul>
+
+
+            <div class="col-12 col-lg-3 justify-content-end text-end">
+              <a href="" class="text-white fs-7"><i class="fa-regular fa-calendar me-2"></i> 30 Days Free Return</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header d-block d-md-none">
+      <div class="header-bg text-white">
+        <!-- Top Header -->
+        <div class="top-header py-2">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-sm-center justify-content-center">
+              <div class="col-lg-6 col-12 text-center info">
+                <a href="#" class="text-white me-4 fs-sm-2"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
+                <a href="#" class="text-white fs-sm-2"><i class="fa-regular fa-envelope me-2"></i>
+                  faregoshoponline@gmail.com</a>
+              </div>
+              <div class="col-lg-6 col-6 text-end d-none d-lg-block"><i class="fa-solid fa-map-location-dot"></i> Track
+                Order</div>
+            </div>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="container py-2">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!-- Logo -->
+            <div class="col-lg-4 col-4">
+              <a href="#"><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
+            </div>
+            <!-- Cart Menu -->
+            <ul class="nav col-8 col-lg-4 justify-content-end">
+              <li><a href="./account.html" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i></a></li>
+              <li>
+                <a href="#wishlist" class="nav-link px-2 text-white">
+                  <i class="fa-regular fa-heart"></i>
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-purple ">3</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cart.html" class="nav-link px-2 text-white">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <!-- Badge -->
+                  <span class="badge rounded-pill bg-purple ">3</span>
+                </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Main Menu -->
+      <div class="lower-bg py-2">
+        <div class="container">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <div class="row  d-flex justify-content-start align-items-center">
+                <div class="col-2">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </div>
+                <div class="col-10">
+                  <form>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2 searchform-wrapper">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./dafox-product-listing-page.html">DafoxTech</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./adopisoft-product-listing.html">AdoPisoft</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">On Sale</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog & Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </section>
+
+
+
+  <!-- Main -->
+  <div id="home_slider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#home_slider" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#home_slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#home_slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <!-- Slide 1-->
+      <div class="carousel-item active home-slider"
+        style=" background: linear-gradient(to right, #D2FFF8, #FEFBEB, #F1CAC2);">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 align-self-center">
+              <div class="pb-4">
+                <div class="pb-5">
+                  <img src="img/dafox.png" alt="DafoxTech">
+                </div>
+                <h1 class="fs-1"><b>Unlocking Convenience</b></h1>
+                <h5 class="fs-5">For a Seamless and Hassle-FREE eLoading services, Top-up your favourite e-wallet Gcash,
+                  Maya Cash-in and Bills Payment.</h5>
+              </div>
+              <div class="row">
+                <div class="col-lg-4"><a class="btn btn-primary btn-sm btn-cta bradius" type="button" href="./dafox-product-listing-page.html">Shop Now!</a></div>
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center text-center">
+              <img src="img/atf-img.png" alt="" class="img-fluid slider-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2-->
+
+      <div class="carousel-item home-slider" style="background: linear-gradient(to left, #E930BB, #D420A8, #990174);">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 align-self-center">
+              <div class="pb-4">
+                <div class="pb-5">
+                  <img src="img/ado-logo.png" alt="AdoPisoft">
+                </div>
+                <h1 class="fs-1 white-text" style="color:#fff;"><b>Enjoy Up to 20<i class="bi bi-percent"></i>Off on
+                    Your First Purchase!</b></h1>
+                <h5 class="fs-5 white-text" style="color:#fff;">For a Seamless & Hassle-FREE eLoading services, Gcash,
+                  Maya Cash-in and Bills Payment.</h5>
+              </div>
+              <div class="row">
+                <div class="col-lg-4"><a class="btn btn-primary btn-sm btn-cta bradius" type="button" href="./adopisoft-product-listing.html">Shop Now!</a></div>
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center text-center">
+              <img src="img/ado-banner.png" alt="" class="img-fluid slider-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- CTA -->
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 ">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card custom-card cta1">
+              <div class="container text-center">
+                <div class="row align-items-center">
+                  <div class=" col card-body custom-card-body custom-card-body-start">
+                    <img src="img/cta1.png" class="img-fluid" alt="Image 1">
+                  </div>
+                  <div class=" col card-body custom-card-body custom-card-body-end pe-5">
+                    <h3 class="card-title">The Most Reliable Peso <i class="bi bi-wifi"></i> Hotspot </h3>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-primary btn-cta bradius">Check Out Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card custom-card cta2 custom-card-right">
+
+              <div class="container text-center">
+                <div class="row align-items-center">
+                  <div class=" col card-body custom-card-body custom-card-body-start ps-5">
+                    <h3 class="card-title darkblue-font">Unlocking Convenience</h3>
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-primary btn-cta bradius">Browse Products</a>
+                    </div>
+                  </div>
+                  <div class=" col card-body custom-card-body custom-card-body-end pe-5 pt-3">
+                    <img src="img/cta2.png" class="custom-card-right" alt="Image 3">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card custom-card cta3 align-items-center">
+              <img src="img/cta3.png" class="" alt="Image 2" style="position: absolute; bottom: 0;">
+              <div class="card-body p-5 pt-4" style="position: absolute; top: 0; right: 0;">
+                <div class="hstack gap-2">
+                  <div class="p-2">
+                    <h3 class="card-title" style="text-align: left;">Check out Our Ready Made Machines</h3>
+                  </div>
+                  <div class="">
+                    <a href="#" class="btn btn-primary btn-cta bradius btn-block">Shop Now</a>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+
+  <!-- Flash Sales -->
+  <div class="container products-slider pt-3">
+    <div class="row align-items-center">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+          <h2>Flash Sales</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Container -->
+              <div class="prod-wrapper mt-3 mb-3">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper">
+                          <a href="#" class="text-dark">
+                            <i class="bi bi-heart"></i>
+                          </a>
+                        </div>
+                        <div class="ico-wrapper">
+                          <a href="#" class="text-dark">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">30<i class="bi bi-percent"></i></span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">DafoxTech Official PCB Board</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><span class="fas fa-eye"></span></a>
+                        </div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><span class="fas fa-heart"></span></a>
+                        </div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <!-- CTA Full -->
+  <div class="cta-wrapper my-5 " style="min-height: 500px;">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <!-- Content for the first column -->
+          <div>
+            <h1 class="text-white">All New DafoxTech </br>PCB Custom Board!</h1>
+            <p class="text-white">For a Seamless & Hassle-FREE eLoading services, Gcash, Maya Cash-in and Bills Payment.
+            </p>
+            <div class="row">
+              <div class="col-lg-4"><button class="btn btn-primary btn-sm btn-cta bradius">Shop Now!</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center align-items-center" style="position: relative;">
+          <!-- Content for the second column -->
+          <img src="img/cta-img.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Recently Added  -->
+
+  <div class="container products-slider pt-3">
+    <div class="row align-items-center">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+          <h2>Recently Added Products</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Container -->
+              <div class="prod-wrapper mt-3 mb-3">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+
+  <!-- Best Sellers  -->
+
+  <div class="container products-slider pt-3">
+    <div class="row align-items-center">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+          <h2>Best Seller</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Container -->
+              <div class="prod-wrapper mt-3 mb-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <!-- On Sale  -->
+  <div class="container products-slider pt-3">
+    <div class="row align-items-center pb-4">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+          <h2>On Sale Right Now!</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- Container -->
+              <div class="prod-wrapper mt-3 mb-5 ">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- Container -->
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card card-hover position-relative">
+                      <img src="img/prod01.png" class="card-img-top" alt="Item Image"
+                        style="background-color: #ECF1F3;  border-radius: 8px;">
+                      <div class="card-body">
+                        <h5 class="card-title f18 prod-title">ESP32 Development Board
+                          30P/38P with Activation
+                          Key Code</h5>
+                        <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+                        <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+                        <div class="d-flex justify-content-start">
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star text-warning"></i>
+                          <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-eye"></i></a></div>
+                        <div class="ico-wrapper"><a href="#" class="text-dark"><i class="fas fa-heart"></i></a></div>
+                      </div>
+                      <div class="badge-store">
+                        <img src="img/dafox-ico.png" alt="" class="me-2">
+                        <span class="badge bg-danger p-2">Store</span>
+                      </div>
+                      <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+
+  <!-- Blog -->
+  <div class="blog-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="container">
+
+            <div class="row">
+              <div class="hstack gap-2 pb-4">
+                <div class="p-2">
+                  <h3 class="card-title" style="text-align: left;">Recent Articles and News</h3>
+                </div>
+                <div class="ms-auto">
+                  <a href="#" class="btn btn-primary btn-cta bradius btn-block">View All</a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="blog-thumbnail">
+                  <img src="img/blog-thumbnail.png" alt="Featured Image">
+                  <div class="arrow">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="content">
+                    <div class="title">Blog Post Title</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                      erat a ante.</div>
+                    <div class="meta">
+                      <span class="date">March 25, 2024</span> |
+                      <span class="category">Category</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="blog-thumbnail">
+                  <img src="img/blog-thumbnail.png" alt="Featured Image">
+                  <div class="arrow">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="content">
+                    <div class="title">Blog Post Title</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                      erat a ante.</div>
+                    <div class="meta">
+                      <span class="date">March 25, 2024</span> |
+                      <span class="category">Category</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="blog-thumbnail">
+                  <img src="img/blog-thumbnail.png" alt="Featured Image">
+                  <div class="arrow">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="content">
+                    <div class="title">Blog Post Title</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                      erat a ante.</div>
+                    <div class="meta">
+                      <span class="date">March 25, 2024</span> |
+                      <span class="category">Category</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="blog-thumbnail">
+                  <img src="img/blog-thumbnail.png" alt="Featured Image">
+                  <div class="arrow">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="content">
+                    <div class="title">Blog Post Title</div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                      erat a ante.</div>
+                    <div class="meta">
+                      <span class="date">March 25, 2024</span> |
+                      <span class="category">Category</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="container testimonial-wrapper">
+    <div class="row mb-4 ">
+      <div class="col-2"></div>
+      <div class="align-items-center">
+        <div class="mb-4">
+          <h2 class="text-center heading">What People Say About Our Business Products</h2>
+        </div>
+        <div class="row  justify-content-center">
+
+          <div class="col-8 text-center">
+            <img src="img/testimonial.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+            <img src="img/elsie.png" alt="">
+
+            <div class="rating-reviews ratingout pt-3">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="date mb-0 f18">4.8 rating out of 41, 235 reviews</p>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-2"></div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <div class="profile">
+                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
+                  <h5 class="card-title mb-0">John Doe</h5>
+                </div>
+                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                  a ante.</p>
+                <div class="rating-date mb-2">
+                  <p class="date mb-0">8:36PM<br>March 25, 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <div class="profile">
+                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
+                  <h5 class="card-title mb-0">John Doe</h5>
+                </div>
+                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                  a ante.</p>
+                <div class="rating-date mb-2">
+                  <p class="date mb-0">8:36PM<br>March 25, 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <div class="profile">
+                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
+                  <h5 class="card-title mb-0">John Doe</h5>
+                </div>
+                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                  a ante.</p>
+                <div class="rating-date mb-2">
+                  <p class="date mb-0">8:36PM<br>March 25, 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <div class="profile">
+                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
+                  <h5 class="card-title mb-0">John Doe</h5>
+                </div>
+                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                  a ante.</p>
+                <div class="rating-date mb-2">
+                  <p class="date mb-0">8:36PM<br>March 25, 2024</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-white pt-6 footer-bg  mt-auto ">
+    <div class="container custom-container">
+      <div class="row py-5">
+        <div class="col-md-3 col-sm-6 mb-3">
+          <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+          <div class="mt-4 pe-lg-5">It started with a crazy idea, and is
+            now being used by thousands of people nationwide and in other countries.</div>
+        </div>
+        <div class="col-md-6 col-sm-6 mb-3">
+          <h5 class="text-white  pb-4">Quicklinks</h5>
+          <div classs="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="row">
+              <div class="col">
+                <ul class="list-unstyled ">
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">Home</a></li>
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">DafoxTech</a></li>
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">AdoPisoft</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-unstyled">
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">On Sale</a></li>
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">Blog and Events</a></li>
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">FAQs</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-unstyled ">
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">On Sale</a></li>
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">Blog and Events</a></li>
+                  <li class=" pb-2"><a href="#" class="text-white fs-7">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <h5 class="text-white  pb-4">Newsletter</h5>
+          <form>
+            <div class="form-group mb-3">
+              <label for="newsletterEmail" class="sr-only">Email address</label>
+              <input type="email" class="form-control bradius" id="newsletterEmail" placeholder="Enter email" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-cta bradius">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="divider mt-5 py-2">
+      <div class="container">
+        <div class="row pt-2">
+          <div class="col-6 justify-content-start"><a href="" class="text-white fs-8"><b> <i
+                  class="bi bi-c-circle-fill"></i> 2024, Flarego</b> Online Store. Powered by Shopify</a></div>
+          <div class="col-6 text-end fs-8">We accept payments via <img src="img/payment-gateway.png" class="ms-2"
+              alt=""></div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
