@@ -7,9 +7,27 @@
   <title>Cart</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <!-- FontAwesome CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
+<style>
+  .material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  .material-symbols-rounded.fill {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+</style>
 
 <body>
   <!-- Header -->
@@ -20,53 +38,74 @@
         <div class="top-header py-2">
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <div class="col-lg-6 col-6 text-start">
-                <a href="#" class="text-white me-4"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
-                <a href="#" class="text-white "><i class="fa-regular fa-envelope me-2"></i>
-                  faregoshoponline@gmail.com</a>
+              <div class="col-lg-6 col-6 d-flex flex-row">
+                <a href="#" class="text-white me-4 fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1">
+                  phone_forwarded
+                  </span>09177024612</a>
+                <a href="#" class="text-white fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1">
+                  mail
+                  </span>
+                  flaregoshoponline@gmail.com</a>
               </div>
-              <div class="col-lg-6 col-6 text-end "><i class="fa-solid fa-map-location-dot"></i> Track Order</div>
+              <div class="col-lg-6 col-6 fs-7">
+                <a href="#" class="text-white me-4 fs-7 d-flex align-items-center justify-content-end">
+                <span class="material-symbols-rounded me-1">
+                map
+                </span> Track Order
+              </a>
             </div>
           </div>
         </div>
         <!-- Search -->
-        <div class="container py-3">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="container custom-container py-3">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
             <!-- Logo -->
-            <div class="col-lg-4">
+            <div class="col-lg-3 justify-content-start">
               <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a>
             </div>
             <!-- Form -->
-            <div class="col-12 col-lg-4">
+            <div class="col-lg-6 justify-content-center">
               <form>
                 <div class="form-row align-items-center">
                   <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
                     <div class="input-group mb-2 searchform-wrapper">
                       <div class="input-group-prepend">
-                        <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="input-group-text searchico">
+                          <span class="material-symbols-rounded text-dark ps-3 ">
+                            search
+                            </span>
+                        </div>
                       </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
                     </div>
                   </div>
                 </div>
               </form>
             </div>
             <!-- Cart Menu -->
-            <ul class="nav col-12 col-lg-4 justify-content-end">
-              <li><a href="./account.html" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i> Sign In</a></li>
+            <ul class="nav justify-content-end col-lg-3  text-end">
+              <li><a href="./account.html" class="nav-link px-2 text-white align-items-center d-flex">
+                <span class="material-symbols-rounded me-1">
+                person
+                </span>
+                Sign In
+              </a></li>
               <li>
-                <a href="#wishlist" class="nav-link px-2 text-white">
-                  <i class="fa-regular fa-heart"></i>
+                <a href="#wishlist" class="nav-link px-2 text-white align-items-center d-flex">
+                  <span class="material-symbols-rounded me-1">
+                    favorite
+                    </span>
                   <!-- Badge -->
-                  <span class="badge rounded-pill bg-purple ">3</span> Wishlist
+                  <span class="badge rounded-circle bg-purple me-1">3</span> Wishlist
                 </a>
               </li>
               <li>
-                <a href="./cart.html" class="nav-link px-2 text-white">
-                  <i class="fa-solid fa-bag-shopping"></i>
+                <a href="./cart.html" class="nav-link px-2 text-white align-items-center d-flex">
+                  <span class="material-symbols-rounded me-1">
+                    shopping_cart
+                    </span>
                   <!-- Badge -->
-                  <span class="badge rounded-pill bg-purple ">3</span> Cart
+                  <span class="badge rounded-pill bg-purple me-1">3</span> Cart
                 </a>
             </ul>
           </div>
@@ -101,9 +140,10 @@
             </ul>
 
 
-            <div class="col-12 col-lg-3 justify-content-end text-end">
-              <a href="" class="text-white"><i class="fa-regular fa-calendar me-2"></i> 30 Days Free Return</a>
-            </div>
+            <div class="col-12 col-lg-3 d-flex justify-content-end text-end">
+              <a href="" class="text-white d-flex align-items-center"><span class="material-symbols-rounded me-2">
+                inventory
+                </span> 30 Days Free Return</a></div>
           </div>
         </div>
       </div>
@@ -119,7 +159,7 @@
               <div class="col-lg-6 col-12 text-center info">
                 <a href="#" class="text-white me-4 fs-sm-2"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
                 <a href="#" class="text-white fs-sm-2"><i class="fa-regular fa-envelope me-2"></i>
-                  faregoshoponline@gmail.com</a>
+                  flaregoshoponline@gmail.com</a>
               </div>
               <div class="col-lg-6 col-6 text-end d-none d-lg-block"><i class="fa-solid fa-map-location-dot"></i> Track
                 Order</div>
@@ -170,12 +210,12 @@
                   <form>
                     <div class="form-row align-items-center">
                       <div class="col-auto">
-                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <label class="sr-only" for="inlineFormInputGroup">Find product</label>
                         <div class="input-group mb-2 searchform-wrapper">
                           <div class="input-group-prepend">
                             <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
                           </div>
-                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
                         </div>
                       </div>
                     </div>
@@ -263,7 +303,9 @@
                             </div>
                             <div class="p-2">
                               <p>TB74 Bill Acceptor</p>
-                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                              <p class="remove"><span class="material-symbols-rounded">
+close
+</span> Remove</p>
                             </div>
                           </div>
                         </th>
@@ -291,7 +333,9 @@
                             </div>
                             <div class="p-2">
                               <p>TB74 Bill Acceptor</p>
-                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                              <p class="remove"><span class="material-symbols-rounded">
+close
+</span> Remove</p>
                             </div>
                           </div>
                         </th>
@@ -319,7 +363,9 @@
                             </div>
                             <div class="p-2">
                               <p>TB74 Bill Acceptor</p>
-                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                              <p class="remove"><span class="material-symbols-rounded">
+close
+</span> Remove</p>
                             </div>
                           </div>
                         </th>
@@ -347,7 +393,9 @@
                             </div>
                             <div class="p-2">
                               <p>TB74 Bill Acceptor</p>
-                              <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                              <p class="remove"><span class="material-symbols-rounded">
+close
+</span> Remove</p>
                             </div>
                           </div>
                         </th>
@@ -619,7 +667,9 @@
                           </div>
                         </td>
                         <td><span class="txt-blue">$19.00</span>
-                          <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                          <p class="remove"><span class="material-symbols-rounded">
+close
+</span> Remove</p>
                         </td>
                       </tr>
                       <!-- Additional cart items can be added here -->
@@ -647,7 +697,9 @@
                           </div>
                         </td>
                         <td><span class="txt-blue">$19.00</span>
-                          <p class="remove"><i class="fa-solid fa-square-xmark"></i> Remove</p>
+                          <p class="remove"><span class="material-symbols-rounded">
+close
+</span> Remove</p>
                         </td>
                       </tr>
                     </tbody>
