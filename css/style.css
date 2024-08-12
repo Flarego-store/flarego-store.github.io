@@ -2,6 +2,13 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); */
 
 @font-face {
+    font-family: 'poppins';
+    src: url('Poppins-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'nexaextra_light';
     src: url('nexa-extralight-webfont.woff2') format('woff2'),
          url('nexa-extralight-webfont.woff') format('woff');
@@ -22,6 +29,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'unbounded';
+    src: url("Unbounded-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,body{
     height: 100%;
     overflow-x: hidden;
@@ -35,6 +50,12 @@ body,p,a,h1,h2,h3,h4,h5,h6,ul,ol,ol li,ul li{
     font-weight: 900;
     color: #0D0945;
 }
+
+.carousel-wrapper h1{
+    font-family: 'unbounded';
+    font-weight: 900;
+}
+
 li{
     padding-bottom: 0.25rem;
     padding-top: 0.25rem;
@@ -84,19 +105,13 @@ footer #end-footer{
     width: 100%;
     color: #fff;
     border: 0;
-    padding: 10px 20px;
+    padding: 13px 20px;
     min-width: 140px;
+    font-size: 16px;
+    font-weight: 900;
 }
 
 .btn-yellow{
-    /* background-color: #fff;
-    width: 100%;
-    min-width: 150px;
-    border: none;
-    color:#FF9830;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 800; */
     background-color: #fff;
     border: 3px solid #fff;
     padding: 10px 20px;
@@ -109,24 +124,25 @@ footer #end-footer{
 
 .btn-transparent{
     background-color: transparent;
-    border: 3px solid #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 800;
+    border: 2px solid #fff;
     width: 100%;
     color: #fff;
-    min-width: 150px;
+    padding: 11px;
+    min-width: 140px;
+    font-size: 16px;
 }
 
 .btn-white{
-    border: 2px solid #413BB9;
+    border: 2px solid #ffffff;
     background: #fff;
     color: #413BB9;
-    width: 100%;
+    width: 150px;
     padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 800;
 }
 
-.btn-white:hover, .btm-shop:hover{
+.btn-white:hover, .btn-shop:hover{
     background: #fff;
     color: #413BB9;
 }
@@ -156,7 +172,7 @@ footer {
     color: #fff;
 }
 .bg-footer, .cta-wrapper{
-    background-image: linear-gradient(200deg, #FFEB33, #FFAA11);
+    background-image: linear-gradient(200deg, #151062, #06032C);
 }
 .divider{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -189,6 +205,7 @@ a{
     min-height: 550px;
     background: no-repeat center center scroll;
     background-size: cover;
+    position: relative;
 }
 #home_slider .carousel-indicators [data-bs-target] {
     width: 10px;
@@ -360,6 +377,7 @@ a{
 }
 .card p{
     margin-bottom: 5px;
+    margin-top: 5px;
     line-height: 1rem;
     font-size: 0.8rem;
 }
@@ -401,10 +419,11 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
     width: 50%;
     border-radius: 0 15px 15px 0; /* Apply border-radius only to the right side of the card body */
 }
+
 .custom-card-body-start {
     align-items: flex-start !important;
 }
@@ -439,9 +458,13 @@ a{
 }
 .cta-wrapper{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    min-height: 440px;
+    position: relative;
+    align-items: center;
+    flex-flow: wrap;
 }
+
 .headline-wrapper{
     display: flex;
     flex-direction: column;
@@ -502,18 +525,28 @@ a{
     padding: 15px 0px;
 }
 .blog-thumbnail .title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 4px;
+    font-family: 'unbounded';
+    color: #17563C;
 }
 .blog-thumbnail .description {
     font-size: 0.8rem;
     line-height: 1rem;
     margin-bottom: 10px;
+    font-family: 'poppins';
 }
 .blog-thumbnail .meta {
-    font-size: 0.6rem;
-    color: #7f8c8d;
+    font-size: 0.7rem;
+    color: #154D8F;
+    background-color: #E1F6FF;
+    padding: 10px;
+    width: auto;
+    display: inline-block;  
+    border-radius: 7px;
+    font-family: 'poppins';
+    font-weight: bolder;
 }
 .blog-thumbnail .category {
     color: #3498db;
@@ -557,10 +590,9 @@ a{
 }
 .testimonial-card .card-img-top {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
     object-fit: cover;
-    border: 3px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .testimonial-card .rating-date {
@@ -822,14 +854,16 @@ a{
 .nav-tabs .nav-link{
     border: 0;
     background: #ECF1F3;
-    border-radius: 10px;
-    min-width: 215px;
+    border-radius: 20px;
+    width: 190px;
     border: 3px solid #fff;
     box-shadow: #b9b9b966 0px 0px 20px;
+    height: 200px;
 }
 .nav-tabs  .nav-item{
     padding:10px;
         line-height: 1.2rem;
+        
 }
 .checkbox-range{
         padding: 12px 0px;
@@ -940,11 +974,9 @@ a{
     background: #fff !important;
     border-radius: 15px;
     overflow: hidden !important;
-    height: 45px;
+    padding: 0.5rem 0.25rem;
 }
-.searchico{
-    padding: 10px;
-}
+
 .searchform-wrapper .searchico, .searchform-wrapper .form-control{
     background: transparent !important;
     border: 0 !important;
@@ -1182,6 +1214,8 @@ color: #6C7275;
 font-size: 14px;
 font-weight: 400;
 margin: 0;
+display: flex;
+align-items: center;
 }
 .cart-item th{
 font-size: 18px;
@@ -1469,7 +1503,8 @@ padding: 15px;
         width: 100%;
     }
 }
- span.material-symbols-rounded{
+
+.header-wrapper span.material-symbols-rounded{
     color: #BBB6FF;
  }
 
@@ -1491,3 +1526,10 @@ padding: 15px;
  #myTabContent #productContainer .ico-wrapper span.material-symbols-rounded.fill{
     color:#000
  }
+
+.colon{
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: 900;
+    color: #E07575;
+}

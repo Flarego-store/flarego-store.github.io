@@ -32,19 +32,18 @@
     'GRAD' 0,
     'opsz' 24
   }
-
 </style>
 
 <body>
   <!-- Header -->
   <section class="header-wrapper">
-    <header class="d-none d-md-block">
+    <header>
       <div class="header-bg text-white">
         <!-- Top Header -->
         <div class="top-header py-2">
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <div class="col-lg-6 col-6 d-flex flex-row">
+              <div class="col-lg-6 d-flex flex-row">
                 <a href="#" class="text-white me-4 fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1">
                   phone_forwarded
                   </span>09177024612</a>
@@ -53,43 +52,43 @@
                   </span>
                   flaregoshoponline@gmail.com</a>
               </div>
-              <div class="col-lg-6 col-6 fs-7">
+              <div class="col-lg-6 fs-7 d-lg-block d-none">
                 <a href="#" class="text-white me-4 fs-7 d-flex align-items-center justify-content-end">
                 <span class="material-symbols-rounded me-1">
                 map
                 </span> Track Order
               </a>
             </div>
-            </div>
           </div>
         </div>
         <!-- Search -->
-        <div class="container custom-container py-3">
-          <div class="d-flex flex-wrap justify-content-center justify-content-lg-between">
+        <div class="container py-3 d-none d-lg-block">
+          <div class="d-flex align-items-center justify-content-lg-center justify-content-between">
             <!-- Logo -->
-            <div class="col-lg-3 justify-content-start">
-              <a href=""><img src="img/flarego-shop-logo.png" alt=""></a>
+            <div class="col-lg-3">
+              <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a>
             </div>
             <!-- Form -->
-            <div class="col-lg-6 justify-content-center">
+            <div class="col-lg-6 d-lg-block d-none">
               <form>
-                <div class="form-row align-items-center">
+                <div class="form-row">
                   <div class="col-auto">
                     <div class="input-group mb-2 searchform-wrapper">
-                      <div class="input-group-prepend align-items-center d-flex">
-                        <span class="material-symbols-rounded text-dark ps-3 ">
-                          search
-                          </span>
+                      <div class="input-group-prepend">
+                        <div class="input-group-text searchico">
+                          <span class="material-symbols-rounded text-dark ps-3 ">
+                            search
+                            </span>
+                        </div>
                       </div>
-                      <input type="text" class="form-control fs-7" id="inlineFormInputGroup"
-                        placeholder="Search products here">
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
                     </div>
                   </div>
                 </div>
               </form>
             </div>
             <!-- Cart Menu -->
-            <ul class="nav justify-content-end col-lg-3">
+            <ul class="nav justify-content-end col-lg-3  text-end">
               <li><a href="./account.html" class="nav-link px-2 text-white align-items-center d-flex">
                 <span class="material-symbols-rounded me-1">
                 person
@@ -118,8 +117,8 @@
         </div>
       </div>
       <!-- Main Menu -->
-      <div class="lower-bg py-2">
-        <div class="container custom-container">
+      <div class="lower-bg py-2 d-lg-block d-none">
+        <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <div class="col-lg-3">
               <div class="dropdown show">
@@ -146,8 +145,8 @@
             </ul>
 
 
-            <div class="col-12 col-lg-3 justify-content-end text-end">
-              <a href="" class="text-white d-flex align-items-center justify-content-end "><span class="material-symbols-rounded me-2">
+            <div class="col-12 col-lg-3 d-flex justify-content-end text-end">
+              <a href="" class="text-white d-flex align-items-center"><span class="material-symbols-rounded me-2">
                 inventory
                 </span> 30 Days Free Return</a>
             </div>
@@ -157,48 +156,34 @@
     </header>
 
     <!-- Mobile Header -->
-    <header class="mobile-header d-block d-md-none">
-      <div class="header-bg text-white">
-        <!-- Top Header -->
-        <div class="top-header py-2">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-between">
-              <div class="col-lg-6 col-12 text-center info">
-                <a href="#" class="text-white me-4 fs-sm-2 d-flex align-items-center"><span class="material-symbols-rounded me-1">
-                  phone_forwarded
-                  </span>09177024612</a>
-                <a href="#" class="text-white fs-sm-2 d-flex align-items-center"><span class="material-symbols-rounded me-1">
-                  mail
-                  </span>
-                  flaregoshoponline@gmail.com</a>
-              </div>
-              <div class="col-lg-6 col-6 text-end d-none d-lg-block"><i class="bi fa-map-location-dot"></i> Track
-                Order</div>
-            </div>
-          </div>
-        </div>
+    <header>
+      <div class="header-bg text-white d-block d-lg-none">
         <!-- Search -->
-        <div class="container py-2">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="container py-2 ">
+          <div class="d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-start">
             <!-- Logo -->
-            <div class="col-lg-4 col-4">
-              <a href="#"><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
+            <div class="col-lg-4">
+              <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
             </div>
             <!-- Cart Menu -->
-            <ul class="nav col-8 col-lg-4 justify-content-end">
-              <li><a href="./account.html" class="nav-link px-2 text-white"><i class="bi bi-person"></i></a></li>
+            <ul class="nav col-8 col-lg-4 d-flex align-items-center justify-content-end">
+              <li><a href="./account.html" class="nav-link px-1 text-white d-flex align-items-center"><span class="material-symbols-rounded me-1">
+                person
+                </span></a></li>
               <li>
-                <a href="#wishlist" class="nav-link px-2 text-white">
-                  <span class="material-symbols-rounded">
-favorite
-</span>
+                <a href="#wishlist" class="nav-link px-1 text-white d-flex align-items-center">
+                  <span class="material-symbols-rounded me-1">
+                    favorite
+                    </span>
                   <!-- Badge -->
                   <span class="badge rounded-pill bg-purple ">3</span>
                 </a>
               </li>
               <li>
-                <a href="./cart.html" class="nav-link px-2 text-white">
-                  <i class="bi fa-bag-shopping"></i>
+                <a href="#" class="nav-link px-1 text-white d-flex align-items-center">
+                  <span class="material-symbols-rounded me-1">
+                    shopping_cart
+                    </span>
                   <!-- Badge -->
                   <span class="badge rounded-pill bg-purple ">3</span>
                 </a>
@@ -207,28 +192,29 @@ favorite
         </div>
       </div>
       <!-- Main Menu -->
-      <div class="lower-bg py-2">
+      <div class="lower-bg py-2 d-block d-lg-none">
         <div class="container">
           <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <div class="row  d-flex justify-content-start align-items-center">
-                <div class="col-2">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              <div class="d-flex justify-content-start align-items-center">
+                <div class="col-1">
+                  <button class="navbar-toggler d-flex align-items-center ms-3 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi fa-bars"></i>
+                    <span class="material-symbols-rounded">
+                      menu
+                      </span>
                   </button>
                 </div>
-                <div class="col-10">
+                <div class="col-11">
                   <form>
-                    <div class="form-row align-items-center">
-                      <div class="col-auto">
-                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="col-10">
                         <div class="input-group mb-2 searchform-wrapper">
                           <div class="input-group-prepend">
-                            <div class="input-group-text searchico"><i class="bi fa-magnifying-glass"></i></div>
+                            <div class="input-group-text searchico"><span class="material-symbols-rounded text-dark">
+                              search
+                              </span></div>
                           </div>
-                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
                         </div>
                       </div>
                     </div>
@@ -238,27 +224,27 @@ favorite
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./dafox-product-listing-page.html">DafoxTech</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="./adopisoft-product-listing.html">AdoPisoft</a>
+                    <a class="nav-link" href="./adopisoft-product-listing.html">AdoPisoft</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">On Sale</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog & Events</a>
+                    <a class="nav-link" href="#">Blog and Events/a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">FAQs</a>
                   </li>
                 </ul>
               </div>
-            </div>
-          </nav>
+            
+         
         </div>
       </div>
     </header>
@@ -267,14 +253,14 @@ favorite
 
 
   <!-- Main -->
-  <div id="home_slider" class="carousel slide" data-bs-ride="carousel">
+  <div id="home_slider" class="carousel" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#home_slider" data-bs-slide-to="0" class="active" aria-current="true"
         aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#home_slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#home_slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner carousel-wrapper">
 
       <!-- Slide 1-->
       <div class="carousel-item active home-slider"
@@ -282,20 +268,20 @@ favorite
         <div class="container">
           <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-lg-4 align-self-center">
+            <div class="col-lg-4 d-flex flex-column justify-content-center mt-4">
               <div class="pb-4">
-                <div class="pb-5">
+                <div class="pb-5 d-flex justify-content-center justify-content-lg-start">
                   <img src="img/dafox.png" alt="DafoxTech">
                 </div>
-                <h1 class="fs-1"><b>Unlocking Convenience</b></h1>
-                <h5 class="fs-5">For a Seamless and Hassle-FREE eLoading services, Top-up your favourite e-wallet Gcash,
+                <h1 class="fs-1 text-center text-lg-start mb-3"><b>Unlocking Convenience</b></h1>
+                <h5 class="fs-5 d-flex flex-wrap text-center text-lg-start">For a Seamless and Hassle-FREE eLoading services, Top-up your favourite e-wallet Gcash,
                   Maya Cash-in and Bills Payment.</h5>
               </div>
               <div class="row">
-                <div class="col-lg-4"><a class="btn btn-primary btn-sm btn-cta bradius" type="button" href="./dafox-product-listing-page.html">Shop Now!</a></div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start"><a class="btn btn-primary btn-cta bradius" type="button" href="./dafox-product-listing-page.html">Shop Now!</a></div>
               </div>
             </div>
-            <div class="col-lg-6 align-self-center text-center">
+            <div class="col-lg-6 text-center">
               <img src="img/atf-img.png" alt="" class="img-fluid slider-img">
             </div>
           </div>
@@ -308,21 +294,23 @@ favorite
         <div class="container">
           <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-lg-4 align-self-center">
+            <div class="col-lg-4 d-flex flex-column justify-content-center mt-4">
               <div class="pb-4">
-                <div class="pb-5">
+                <div class="pb-5 d-flex justify-content-center justify-content-lg-start">
                   <img src="img/ado-logo.png" alt="AdoPisoft">
                 </div>
-                <h1 class="fs-1 white-text" style="color:#fff;"><b>Enjoy Up to 20<i class="bi bi-percent"></i>Off on
+                <h1 class="fs-1 text-center text-lg-start mb-3" style="color:#fff;"><b>Enjoy Up to 20<span class="material-symbols-rounded text-white fs-1">
+                  percent
+                  </span>Off on
                     Your First Purchase!</b></h1>
-                <h5 class="fs-5 white-text" style="color:#fff;">For a Seamless & Hassle-FREE eLoading services, Gcash,
+                <h5 class="fs-5 d-flex flex-wrap text-center text-lg-start" style="color:#fff;">For a Seamless & Hassle-FREE eLoading services, Gcash,
                   Maya Cash-in and Bills Payment.</h5>
               </div>
               <div class="row">
-                <div class="col-lg-4"><a class="btn btn-primary btn-sm btn-cta bradius" type="button" href="./adopisoft-product-listing.html">Shop Now!</a></div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-start"><a class="btn btn-primary btn-sm btn-cta bradius" type="button" href="./adopisoft-product-listing.html">Shop Now!</a></div>
               </div>
             </div>
-            <div class="col-lg-6 align-self-center text-center">
+            <div class="col-lg-6 text-center">
               <img src="img/ado-banner.png" alt="" class="img-fluid slider-img">
             </div>
           </div>
@@ -334,58 +322,54 @@ favorite
   </div>
   <!-- CTA -->
   <div class="container mt-5">
-    <div class="row align-items-center">
+    <div class="row d-flex align-items-center">
       <div class="col-md-1"></div>
-      <div class="col-md-10 ">
+      <div class="col-lg-10">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="card custom-card cta1">
               <div class="container text-center">
-                <div class="row align-items-center">
-                  <div class=" col card-body custom-card-body custom-card-body-start">
-                    <img src="img/cta1.png" class="img-fluid" alt="Image 1">
+                <div class="row d-flex align-items-center flex-column flex-column-reverse flex-lg-row">
+                  <div class="col card-body custom-card-body">
+                    <img src="img/cta1.png" class="img-fluid " alt="Image 1">
                   </div>
-                  <div class=" col card-body custom-card-body custom-card-body-end pe-5">
-                    <h3 class="card-title">The Most Reliable Peso <i class="bi bi-wifi"></i> Hotspot </h3>
+                  <div class="col card-body custom-card-body pe-0 pe-lg-5">
+                    <h3 class="card-title text-center">The Most Reliable Peso WiFi Hotspot </h3>
                     <div class="btn-group">
-                      <a href="#" class="btn btn-primary btn-cta bradius">Check Out Now</a>
+                      <a href="#" class="btn btn-white bradius my-3">Shop Now!</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card custom-card cta2 custom-card-right">
-
+            <div class="card custom-card cta2 ">
               <div class="container text-center">
-                <div class="row align-items-center">
-                  <div class=" col card-body custom-card-body custom-card-body-start ps-5">
-                    <h3 class="card-title darkblue-font">Unlocking Convenience</h3>
+                <div class="row d-flex align-items-center flex-column flex-lg-row">
+                  <div class="col card-body custom-card-body ps-0 ps-lg-5">
+                    <h3 class="card-title darkblue-font text-center">The Most Reliable Peso WiFi Hotspot </h3>
                     <div class="btn-group">
-                      <a href="#" class="btn btn-primary btn-cta bradius">Browse Products</a>
+                      <a href="#" class="btn btn-primary btn-cta bradius my-3">Shop Now!</a>
                     </div>
                   </div>
-                  <div class=" col card-body custom-card-body custom-card-body-end pe-5 pt-3">
-                    <img src="img/cta2.png" class="custom-card-right" alt="Image 3">
+                  <div class="col card-body custom-card-body ">
+                    <img src="img/cta2.png" class="img-fluid" alt="Image 1">
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card custom-card cta3 align-items-center">
+          <div class="col-lg-6">
+            <div class="card custom-card cta3 d-flex align-items-center">
               <img src="img/cta3.png" class="" alt="Image 2" style="position: absolute; bottom: 0;">
-              <div class="card-body p-5 pt-4" style="position: absolute; top: 0; right: 0;">
-                <div class="hstack gap-2">
+              <div class="card-body px-5 pt-4" style="position: absolute; top: 0; right: 0;">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
                   <div class="p-2">
                     <h3 class="card-title" style="text-align: left;">Check out Our Ready Made Machines</h3>
                   </div>
                   <div class="">
-                    <a href="#" class="btn btn-primary btn-cta bradius btn-block">Shop Now</a>
+                    <a href="#" class="btn btn-white bradius btn-block">Shop Now!</a>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>
@@ -403,12 +387,46 @@ favorite
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
-          <h2>Flash Sales</h2>
+          <div class="d-flex flex-column">
+            <div class="d-flex align-items-center gap-3" style="color: #413BB9 ;"><svg width="20" height="40" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="40" rx="4" fill="#413BB9"/>
+              </svg>Today's
+            </div>
+            <div class="d-flex flex-lg-row flex-column-reverse mt-3 mb-4 col-lg-5 align-items-lg-center">
+              <h5 class="me-5">Flash Sales</h5>
+              <div class="d-flex flex-row">
+              <div class="me-2">
+                <h5 class="f16">Days</h5>
+                
+                <h5 class="f14">03</h5>
+              </div>
+              <h5 class="colon d-flex align-self-end">:</h5>
+              <div class="me-2">
+                <h5 class="f16">Hours</h5>
+                
+                <h5 class="f14">23</h5>
+              </div>
+              <h5 class="colon d-flex align-self-end">:</h5>
+              <div class="me-2">
+                <h5 class="f16">Minutes</h5>
+                
+                <h5 class="f14">19</h5>
+              </div>
+              <h5 class="colon d-flex align-self-end">:</h5>
+              <div class="me-2">
+                <h5 class="f16">Seconds</h5>
+                
+                <h5 class="f14">56</h5>
+              </div>
+            </div>
+            </div>
+          </div>
+          
           <div class="carousel-inner">
             <div class="carousel-item active">
               <!-- Container -->
-              <div class="prod-wrapper mt-3 mb-3">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -417,40 +435,40 @@ favorite
                         <h5 class="card-title f18 prod-title">ESP32 Development Board
                           30P/38P with Activation
                           Key Code</h5>
-                        <p class="card-text prod-desc f12 prod-desc">All accessories included</p>
+                        <p class="card-text prod-desc f12">All accessories included</p>
                         <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
                         <div class="d-flex justify-content-start">
                           <span class="material-symbols-rounded fill">
-grade
-</span>
+                            grade
+                          </span>
                           <span class="material-symbols-rounded fill">
-grade
-</span>
+                            grade
+                          </span>
                           <span class="material-symbols-rounded fill">
-grade
-</span>
+                            grade
+                          </span>
                           <span class="material-symbols-rounded fill">
-grade
-</span>
-<span class="material-symbols-rounded fill">
-  grade
-  </span>
+                            grade
+                          </span>
+                          <span class="material-symbols-rounded fill">
+                            grade
+                          </span>
                         </div>
                       </div>
                       <div class="position-absolute top-0 end-0 p-2">
                         <div class="ico-wrapper">
                           <a href="#" class="text-dark">
                             <span class="material-symbols-rounded">
-favorite
-</span>
+                            favorite
+                            </span>
                             
                           </a>
                         </div>
                         <div class="ico-wrapper">
                           <a href="#" class="text-dark">
                             <span class="material-symbols-rounded">
-visibility
-</span>
+                            visibility
+                            </span>
                           </a>
                         </div>
                       </div>
@@ -471,19 +489,19 @@ visibility
                         <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
                         <div class="d-flex justify-content-start">
                           <span class="material-symbols-rounded fill">
-grade
-</span>
+                            grade
+                            </span>
                           <span class="material-symbols-rounded fill">
-grade
-</span>
+                            grade
+                            </span>
                           <span class="material-symbols-rounded fill">
-grade
-</span>
+                            grade
+                            </span>
                           <span class="material-symbols-rounded fill">
-grade
-</span>
+                            grade
+                            </span>
                           <span class="material-symbols-rounded">
-star_half</span>
+                            star_half</span>
                         </div>
                       </div>
                       <div class="position-absolute top-0 end-0 p-2">
@@ -593,7 +611,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -768,7 +786,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -941,6 +959,7 @@ favorite
               </div>
             </div>
           </div>
+          <div class="d-lg-block d-none"> 
           <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
             <span class="material-symbols-rounded">
               arrow_left_alt
@@ -953,6 +972,7 @@ arrow_right_alt
 </span>
             <span class="visually-hidden">Next</span>
           </button>
+          </div>
         </div>
       </div>
 
@@ -962,28 +982,28 @@ arrow_right_alt
   </div>
 
   <!-- CTA Full -->
-  <div class="cta-wrapper my-5 " style="min-height: 500px;">
+  <div class="cta-wrapper my-5">
     <div class="container my-5">
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
+      <div class="row ">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
           <!-- Content for the first column -->
           <div>
             <h1 class="text-white">All New DafoxTech </br>PCB Custom Board!</h1>
             <p class="text-white">For a Seamless & Hassle-FREE eLoading services, Gcash, Maya Cash-in and Bills Payment.
             </p>
             <div class="row">
-              <div class="col-lg-6"><button class="btn btn-sm btn-yellow bradius">Shop Now!</button></div>
+              <div class="col-lg-6"><button class="btn btn-sm btn-cta bradius">Shop Now!</button></div>
               <div class="col-lg-6"><button class="btn btn-sm btn-transparent bradius">Discover more</button></div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6 d-flex justify-content-center align-items-center" style="position: relative;">
+        <div class="col-lg-6 d-flex justify-content-center align-items-end">
           <!-- Content for the second column -->
-          <img src="img/cta-img.png" alt="" class="img-fluid">
+          <img src="img/cta-img.png" alt="" class="img-fluid position-absolute bottom-0 ms-5 d-lg-block d-none">
+          <img src="img/cta-img.png" alt="" class="img-fluid ms-5 position-absolute bottom-0 d-lg-none d-block">
         </div>
-        <div class="col-md-1"></div>
       </div>
     </div>
   </div>
@@ -996,13 +1016,13 @@ arrow_right_alt
     <div class="row align-items-center">
       <div class="col-md-1"></div>
       <div class="col-md-10">
-        <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+        <div id="recently_added" class="carousel slide" data-bs-ride="carousel">
           <h2>Recently Added Products</h2>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <!-- Container -->
-              <div class="prod-wrapper mt-3 mb-3">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -1177,7 +1197,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -1352,7 +1372,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -1525,13 +1545,13 @@ favorite
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#recently_added" data-bs-slide="prev">
             <span class="material-symbols-rounded">
               arrow_left_alt
               </span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#recently_added" data-bs-slide="next">
             <span class="material-symbols-rounded">
 arrow_right_alt
 </span>
@@ -1552,13 +1572,13 @@ arrow_right_alt
     <div class="row align-items-center">
       <div class="col-md-1"></div>
       <div class="col-md-10">
-        <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+        <div id="best_sellers" class="carousel slide" data-bs-ride="carousel">
           <h2>Best Seller</h2>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <!-- Container -->
-              <div class="prod-wrapper mt-3 mb-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+              <div class="prod-wrapper mt-5">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -1733,7 +1753,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -1908,7 +1928,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -2081,13 +2101,13 @@ favorite
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#best_sellers" data-bs-slide="prev">
             <span class="material-symbols-rounded">
               arrow_left_alt
               </span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#best_sellers" data-bs-slide="next">
             <span class="material-symbols-rounded">
 arrow_right_alt
 </span>
@@ -2106,13 +2126,13 @@ arrow_right_alt
     <div class="row align-items-center pb-4">
       <div class="col-md-1"></div>
       <div class="col-md-10">
-        <div id="flashsales" class="carousel slide" data-bs-ride="carousel">
+        <div id="on_sale" class="carousel slide" data-bs-ride="carousel">
           <h2>On Sale Right Now!</h2>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <!-- Container -->
-              <div class="prod-wrapper mt-3 mb-5 ">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+              <div class="prod-wrapper mt-5 ">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -2287,7 +2307,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -2462,7 +2482,7 @@ favorite
             <div class="carousel-item">
               <!-- Container -->
               <div class="prod-wrapper mt-5">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                <div class="row row-cols-4 g-4">
                   <div class="col">
                     <div class="card card-hover position-relative">
                       <img src="img/prod01.png" class="card-img-top" alt="Item Image"
@@ -2635,13 +2655,13 @@ favorite
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#flashsales" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#on_sale" data-bs-slide="prev">
             <span class="material-symbols-rounded">
               arrow_left_alt
               </span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#flashsales" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#on_sale" data-bs-slide="next">
             <span class="material-symbols-rounded">
 arrow_right_alt
 </span>
@@ -2661,19 +2681,17 @@ arrow_right_alt
     <div class="container">
       <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-10">
+        <div class="col-lg-10">
           <div class="container">
 
             <div class="row">
               <div class="hstack gap-2 pb-4">
                 <div class="p-2">
-                  <h3 class="card-title" style="text-align: left;">Recent Articles and News</h3>
+                  <h3 class="card-title" style="text-align: left;">Blog</h3>
                 </div>
-                <div class="ms-auto">
-                  <a href="#" class="btn btn-primary btn-cta bradius btn-block">View All</a>
-                </div>
+                
               </div>
-              <div class="col-lg-3">
+              <div class="col-3">
                 <div class="blog-thumbnail">
                   <img src="img/blog-thumbnail.png" alt="Featured Image">
                   <div class="arrow">
@@ -2686,14 +2704,13 @@ arrow_right_alt
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                       erat a ante.</div>
                     <div class="meta">
-                      <span class="date">March 25, 2024</span> |
                       <span class="category">Category</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-3">
                 <div class="blog-thumbnail">
                   <img src="img/blog-thumbnail.png" alt="Featured Image">
                   <div class="arrow">
@@ -2706,14 +2723,13 @@ arrow_right_alt
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                       erat a ante.</div>
                     <div class="meta">
-                      <span class="date">March 25, 2024</span> |
-                      <span class="category">Category</span>
+                      <span class="category">ANDROID BASE ELOADING VENDO</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-3">
                 <div class="blog-thumbnail">
                   <img src="img/blog-thumbnail.png" alt="Featured Image">
                   <div class="arrow">
@@ -2726,14 +2742,13 @@ arrow_right_alt
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                       erat a ante.</div>
                     <div class="meta">
-                      <span class="date">March 25, 2024</span> |
                       <span class="category">Category</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-3">
                 <div class="blog-thumbnail">
                   <img src="img/blog-thumbnail.png" alt="Featured Image">
                   <div class="arrow">
@@ -2746,7 +2761,6 @@ arrow_right_alt
                     <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
                       erat a ante.</div>
                     <div class="meta">
-                      <span class="date">March 25, 2024</span> |
                       <span class="category">Category</span>
                     </div>
                   </div>
@@ -2839,10 +2853,14 @@ star_half</span>
             <div class="card testimonial-card">
               <div class="card-body">
                 <div class="profile">
-                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
-                  <h5 class="card-title mb-0">John Doe</h5>
+                  <img src="img/elsie.png" class="card-img-top" alt="Profile Picture">
+                  <div class="d-flex flex-column">
+                    
+                    <h5 class="card-title mb-0">John Doe</h5>
+                    <div class="f12 prod-desc">eLoad Retailer</div>
+                  </div>
                 </div>
-                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                <p class="card-text py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
                   a ante.</p>
                 <div class="rating-date mb-2">
                   <p class="date mb-0">8:36PM<br>March 25, 2024</p>
@@ -2870,10 +2888,14 @@ star_half</span>
             <div class="card testimonial-card">
               <div class="card-body">
                 <div class="profile">
-                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
-                  <h5 class="card-title mb-0">John Doe</h5>
+                  <img src="img/elsie.png" class="card-img-top" alt="Profile Picture">
+                  <div class="d-flex flex-column">
+                    
+                    <h5 class="card-title mb-0">John Doe</h5>
+                    <div class="f12 prod-desc">eLoad Retailer</div>
+                  </div>
                 </div>
-                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                <p class="card-text py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
                   a ante.</p>
                 <div class="rating-date mb-2">
                   <p class="date mb-0">8:36PM<br>March 25, 2024</p>
@@ -2901,10 +2923,14 @@ star_half</span>
             <div class="card testimonial-card">
               <div class="card-body">
                 <div class="profile">
-                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
-                  <h5 class="card-title mb-0">John Doe</h5>
+                  <img src="img/elsie.png" class="card-img-top" alt="Profile Picture">
+                  <div class="d-flex flex-column">
+                    
+                    <h5 class="card-title mb-0">John Doe</h5>
+                    <div class="f12 prod-desc">eLoad Retailer</div>
+                  </div>
                 </div>
-                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                <p class="card-text py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
                   a ante.</p>
                 <div class="rating-date mb-2">
                   <p class="date mb-0">8:36PM<br>March 25, 2024</p>
@@ -2932,10 +2958,14 @@ star_half</span>
             <div class="card testimonial-card">
               <div class="card-body">
                 <div class="profile">
-                  <img src="https://via.placeholder.com/50" class="card-img-top" alt="Profile Picture">
-                  <h5 class="card-title mb-0">John Doe</h5>
+                  <img src="img/elsie.png" class="card-img-top" alt="Profile Picture">
+                  <div class="d-flex flex-column">
+                    
+                    <h5 class="card-title mb-0">John Doe</h5>
+                    <div class="f12 prod-desc">eLoad Retailer</div>
+                  </div>
                 </div>
-                <p class="card-text pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
+                <p class="card-text py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat
                   a ante.</p>
                 <div class="rating-date mb-2">
                   <p class="date mb-0">8:36PM<br>March 25, 2024</p>
@@ -3007,8 +3037,8 @@ star_half</span>
           <h5 class="text-white">Newsletter</h5>
           <form>
             <div class="form-group mb-3">
-              <label for="newsletterEmail" class="sr-only">Email address</label>
-              <input type="email" class="form-control bradius" id="newsletterEmail" placeholder="Enter email"
+              
+              <input type="email" class="form-control bradius px-3 py-3" id="newsletterEmail" placeholder="Enter email address"
                 required>
             </div>
             <button type="submit" class="btn btn-primary btn-cta bradius">Subscribe</button>
