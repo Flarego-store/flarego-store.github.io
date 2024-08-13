@@ -92,7 +92,6 @@ footer #end-footer{
 .container{
     max-width: 1440px;
 }
-
 .white-text{
     color:#fff !important;
 }
@@ -136,10 +135,20 @@ footer #end-footer{
     border: 2px solid #ffffff;
     background: #fff;
     color: #413BB9;
-    width: 150px;
+    width: 100%;
+    min-width: 150px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 800;
+}
+.btn-transparent-outline{
+    background-color: transparent;
+    border: 2px solid #413BB9;
+    width: 100%;
+    color: #413BB9;
+    padding: 11px;
+    min-width: 140px;
+    font-size: 16px;
 }
 
 .btn-white:hover, .btn-shop:hover{
@@ -171,7 +180,7 @@ footer {
     background: url('../img/footer-background.png') no-repeat left center/30%;
     color: #fff;
 }
-.bg-footer, .cta-wrapper{
+.bg-footer{
     background-image: linear-gradient(200deg, #151062, #06032C);
 }
 .divider{
@@ -191,7 +200,8 @@ a{
 }
 .slider-img{
     position: relative;
-    max-width: 80% !important;
+    max-width: 100% !important;
+    width: 35rem;
 }
 
 .me-2{
@@ -201,8 +211,6 @@ a{
 }
 /* Slider */
 .home-slider{
-    height: 50vh;
-    min-height: 550px;
     background: no-repeat center center scroll;
     background-size: cover;
     position: relative;
@@ -219,9 +227,16 @@ a{
     border: 4px solid #01D3FE;
 } 
 #home_slider .carousel-indicators{
-    margin-left: 9%;
+    margin-left: 1rem;
     right: unset;
-    margin-bottom: 3%;
+    margin-bottom: 1rem;
+}
+
+@media (max-width:991px) {
+    #home_slider .carousel-indicators{
+        right:0;
+        left:15%;
+    }
 }
 
 .products-slider .carousel-caption {
@@ -459,7 +474,6 @@ a{
 .cta-wrapper{
     display: flex;
     justify-content: space-between;
-    min-height: 440px;
     position: relative;
     align-items: center;
     flex-flow: wrap;
@@ -469,11 +483,9 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-    height: 50vh;
-    min-height: 420px;
     background: linear-gradient(to right, #D2FFF8, #FEFBEB, #F1CAC2);
     position: relative;
+    padding-top: 2rem;
 }
 .headline-wrapper .feat-img{
     position:absolute;
@@ -577,6 +589,7 @@ a{
 .testimonial-card {
     box-shadow: 0 0px 16px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
+    margin:0.875rem;
 }
 .testimonial-card .card-body {
     text-align: left;
@@ -1532,4 +1545,17 @@ padding: 15px;
     font-size: 30px;
     font-weight: 900;
     color: #E07575;
+}
+
+.scrollable{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scrollable li{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
 }
