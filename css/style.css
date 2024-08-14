@@ -38,12 +38,8 @@
 }
 
 html,body{
-    height: 100%;
+    margin:0;
     overflow-x: hidden;
-}
-body {
-    display: flex;
-    flex-direction: column;
 }
 body,p,a,h1,h2,h3,h4,h5,h6,ul,ol,ol li,ul li{
     font-family: 'nexa-trialregular';
@@ -694,8 +690,12 @@ a{
         min-height: 570px;
     align-content: center;
 }
-.page-headers{
+.page-headers-adopisoft{
     background: linear-gradient(to right, #D420A8, #990174);
+    position: relative;
+}
+.page-headers-dafoxtech{
+    background: linear-gradient(to right, #D2FFF8, #FEFBEB, #F1CAC2);
     position: relative;
 }
 .header-img{
@@ -868,12 +868,19 @@ a{
     border: 0;
     background: #ECF1F3;
     border-radius: 20px;
-    width: 190px;
+    width: 220px;
     border: 3px solid #fff;
     box-shadow: #b9b9b966 0px 0px 20px;
-    height: 200px;
+    height: 190px;
 }
-.nav-tabs  .nav-item{
+
+@media (max-width:991px) {
+    .nav-tabs .nav-link{
+        width:150px;
+        height:150px;
+    }
+}
+.nav-tabs .nav-item{
     padding:10px;
         line-height: 1.2rem;
         
@@ -1548,14 +1555,20 @@ padding: 15px;
 }
 
 .scrollable{
-    overflow: auto;
+    overflow-x:auto;
     white-space: nowrap;
+    scrollbar-width: 2px;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color .3s;
+}
+
+.scrollable:hover{
+    scrollbar-color: grey transparent;
 }
 
 .scrollable li{
     display: inline-block;
+    vertical-align: middle;
     color: white;
-    text-align: center;
-    padding: 14px;
     text-decoration: none;
 }
