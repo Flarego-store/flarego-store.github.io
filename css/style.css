@@ -38,8 +38,12 @@
 }
 
 html,body{
-    margin:0;
+    margin: 0;
     overflow-x: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
 }
 body,p,a,h1,h2,h3,h4,h5,h6,ul,ol,ol li,ul li{
     font-family: 'nexa-trialregular';
@@ -1571,4 +1575,12 @@ padding: 15px;
     vertical-align: middle;
     color: white;
     text-decoration: none;
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.375);
 }
