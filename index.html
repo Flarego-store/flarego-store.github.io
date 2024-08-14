@@ -26,6 +26,8 @@
       'GRAD' 0,
       'opsz' 20
     }
+
+  
 </style>
 
 <body>
@@ -136,7 +138,7 @@
           </div>
         </header>
     </section> <!-- Main -->
-    <div id="home_slider" class="carousel" data-bs-ride="">
+    <div id="home_slider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators"> 
           <button type="button" data-bs-target="#home_slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
           <button type="button" data-bs-target="#home_slider" data-bs-slide-to="1" aria-label="Slide 2"></button> 
@@ -1338,6 +1340,12 @@
     </footer> <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(window).scroll(function (event) {
+          var scroll = $(window).scrollTop();
+          console.log(scroll);
+        }); 
+    </script>
 </body>
 
 </html>
