@@ -2,483 +2,520 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>AdoPisoft Product Listings | Flarego Online Shop | Build Your Own Business</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Bootstrap CSS -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ <title>AdoPisoft Product Listings | Flarego Online Shop | Build Your Own Business</title>
 </head>
 <style>
-    .material-symbols-rounded {
-      font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 20
-    }
-    
-    .material-symbols-rounded.fill {
-      font-variation-settings:
-      'FILL' 1,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 20
-    }
-    
+ .material-symbols-rounded {
+   font-variation-settings:
+   'FILL' 0,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 20
+ }
+ 
+ .material-symbols-rounded.fill {
+   font-variation-settings:
+   'FILL' 1,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 20
+ }
+ 
 </style>
 
 <body>
-    <!-- Header -->
-    <section class="header-wrapper">
-        <header>
-            <div class="header-bg text-white">
-                <!-- Top Header -->
-                <div class="top-header py-2">
-                    <div class="container">
-                        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                            <div class="col-lg-6 d-flex flex-row"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> phone_forwarded </span>09177024612</a> <a href="#" class="text-white fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> mail </span> flaregoshoponline@gmail.com</a> </div>
-                            <div class="col-lg-6 fs-7 d-lg-block d-none"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center justify-content-end"> <span class="material-symbols-rounded me-1"> map </span> Track Order </a> </div>
-                        </div>
-                    </div>
-                    <div class="divider mt-2 d-none d-lg-block"></div> <!-- Search -->
-                    <div class="container py-3 d-none d-lg-block">
-                        <div class="d-flex align-items-center justify-content-lg-center justify-content-between">
-                            <!-- Logo -->
-                            <div class="col-lg-3"> <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a> </div> <!-- Form -->
-                            <div class="col-lg-6 d-lg-block d-none">
-                                <form>
-                                    <div class="form-row">
-                                        <div class="col-auto">
-                                            <div class="input-group mb-2 searchform-wrapper">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text searchico"> <span class="material-symbols-rounded text-dark ps-3 "> search </span> </div>
-                                                </div> <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div> <!-- Cart Menu -->
-                            <ul class="nav d-flex justify-content-end col-lg-3">
-                                <li> <a href="./account.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> person </span> Sign In </a> </li>
-                                <li> <a href="#wishlist" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> favorite </span> <!-- Badge --> <span class="badge rounded-circle bg-purple me-1">3</span> Wishlist </a> </li>
-                                <li> <a href="./cart.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> shopping_cart </span> <!-- Badge --> <span class="badge rounded-pill bg-purple me-1">3</span> Cart </a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> <!-- Main Menu -->
-                <div class="lower-bg py-2 d-lg-block d-none">
-                    <div class="container">
-                        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                            <div class="col-lg-3">
-                                <div class="dropdown show"> <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> All Categories </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
-                                </div>
-                            </div>
-                            <ul class="nav col-12 col-lg-6 justify-content-center">
-                                <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
-                                <li><a href="./dafox-product-listing-page.html" class="nav-link px-2 text-white">DafoxTech</a></li>
-                                <li><a href="./adopisoft-product-listing.html" class="nav-link px-2 text-white">AdoPisoft</a></li>
-                                <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
-                                <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
-                                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                            </ul>
-                            <div class="col-12 col-lg-3 d-flex justify-content-end text-end"> <a href="" class="text-white d-flex align-items-center"><span class="material-symbols-rounded me-2"> inventory </span> 30 Days Free Return</a> </div>
-                        </div>
-                    </div>
-                </div>
-        </header> <!-- Mobile Header -->
-        <header>
-            <div class="header-bg text-white d-block d-lg-none">
-                <!-- Search -->
-                <div class="container py-2 ">
-                    <div class="d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-start">
-                        <!-- Logo -->
-                        <div class="col-lg-4"> <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a> </div> <!-- Cart Menu -->
-                        <ul class="nav col-8 col-lg-4 d-flex align-items-center justify-content-end">
-                            <li><a href="./account.html" class="nav-link px-1 text-white d-flex align-items-center"><span class="material-symbols-rounded me-1"> person </span></a></li>
-                            <li> <a href="#wishlist" class="nav-link px-1 text-white d-flex align-items-center"> <span class="material-symbols-rounded me-1"> favorite </span> <!-- Badge --> <span class="badge rounded-pill bg-purple ">3</span> </a> </li>
-                            <li> <a href="#" class="nav-link px-1 text-white d-flex align-items-center"> <span class="material-symbols-rounded me-1"> shopping_cart </span> <!-- Badge --> <span class="badge rounded-pill bg-purple ">3</span> </a>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- Main Menu -->
-            <div class="lower-bg py-2 d-block d-lg-none">
-                <div class="container">
-                    <!-- Navbar -->
-                    <div class="row d-flex justify-content-start align-items-center">
-                        <div class="col-1"> <button class="navbar-toggler d-flex align-items-center ms-3 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="material-symbols-rounded"> menu </span> </button> </div>
-                        <div class="col-11">
-                            <form>
-                                <div class="d-flex justify-content-end align-items-center">
-                                    <div class="w-100 mx-1">
-                                        <div class="input-group mb-2 searchform-wrapper">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text searchico"><span class="material-symbols-rounded text-dark"> search </span></div>
-                                            </div> <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"> <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="./dafox-product-listing-page.html">DafoxTech</a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="./adopisoft-product-listing.html">AdoPisoft</a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="#">On Sale</a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="#">Blog and Events/a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="#">FAQs</a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section> 
-    
-    <!-- Headline -->
-    <div class="headline-wrapper adopisoft-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-4 d-flex align-self-center">
-                    <div class="pb-4">
-                        <div class="pb-5 d-flex justify-content-center justify-content-lg-start"> <img src="img/ado-logo.png" alt="AdoPisoft"> </div>
-                        <h3 class="text-center text-lg-start mb-3 white-text" style="color:#fff;"><b>Enjoy Up to 20<span class="material-symbols-rounded text-white"> percent </span> Off on </br>Your First Purchase!</b></h3>
-                        <h5 class="fs-5 d-flex flex-wrap text-center text-lg-start white-text" style="color:#fff;">For a Seamless & Hassle-FREE eLoading services, Gcash, Maya Cash-in and Bills Payment.</h5>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center"> <img src="img/ado-banner-2.png" alt="" class="img-fluid slider-img"> </div>
-            </div>
+ <!-- Header -->
+ <section class="header-wrapper " id="header">
+  <header>
+   <div class="header-bg text-white sticky-top">
+    <!-- Top Header -->
+    <div class="top-header py-2">
+     <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+       <div class="col-lg-6 d-flex flex-row"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> phone_forwarded </span>09177024612</a> <a href="#" class="text-white fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> mail </span> flaregoshoponline@gmail.com</a> </div>
+       <div class="col-lg-6 fs-7 d-lg-block d-none"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center justify-content-end"> <span class="material-symbols-rounded me-1"> map </span> Track Order </a> </div>
+      </div>
+     </div>
+     <div class="divider mt-2 d-none d-lg-block"></div> <!-- Search -->
+     <div class="container py-3 d-none d-lg-block">
+      <div class="d-flex align-items-center justify-content-lg-center justify-content-between">
+       <!-- Logo -->
+       <div class="col-lg-3"> <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a> </div> <!-- Form -->
+       <div class="col-lg-6 d-lg-block d-none">
+        <form>
+         <div class="form-row">
+          <div class="col-auto">
+           <div class="input-group mb-2 searchform-wrapper">
+            <div class="input-group-prepend">
+             <div class="input-group-text searchico"> <span class="material-symbols-rounded text-dark ps-3 "> search </span> </div>
+            </div> <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
+           </div>
+          </div>
+         </div>
+        </form>
+       </div> <!-- Cart Menu -->
+       <ul class="nav d-flex justify-content-end col-lg-3">
+        <li> <a href="./account.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> person </span> Sign In </a> </li>
+        <li> <a href="#wishlist" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> favorite </span> <!-- Badge --> <span class="badge rounded-circle bg-purple me-1">3</span> Wishlist </a> </li>
+        <li> <a href="./cart.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> shopping_cart </span> <!-- Badge --> <span class="badge rounded-pill bg-purple me-1">3</span> Cart </a> </li>
+       </ul>
+      </div>
+     </div>
+    </div> <!-- Main Menu -->
+    <div class="lower-bg py-2 d-lg-block d-none">
+     <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+       <div class="col-lg-3">
+        <div class="dropdown show"> <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> All Categories </a>
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
         </div>
+       </div>
+       <ul class="nav col-12 col-lg-6 justify-content-center">
+        <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
+        <li><a href="./dafox-product-listing-page.html" class="nav-link px-2 text-white">DafoxTech</a></li>
+        <li><a href="./adopisoft-product-listing.html" class="nav-link px-2 text-white">AdoPisoft</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+       </ul>
+       <div class="col-12 col-lg-3 d-flex justify-content-end text-end"> <a href="" class="text-white d-flex align-items-center"><span class="material-symbols-rounded me-2"> inventory </span> 30 Days Free Return</a> </div>
+      </div>
+     </div>
     </div>
-    <div class="page-headers-adopisoft">
+   </div>
+  </header> <!-- Mobile Header -->
+  <header>
+   <div class="header-bg text-white d-block d-lg-none">
+    <!-- Search -->
+    <div class="container py-2 ">
+     <div class="d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-start">
+      <!-- Logo -->
+      <div class="col-lg-4"> <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a> </div> <!-- Cart Menu -->
+      <ul class="nav col-8 col-lg-4 d-flex align-items-center justify-content-end">
+       <li><a href="./account.html" class="nav-link px-1 text-white d-flex align-items-center"><span class="material-symbols-rounded me-1"> person </span></a></li>
+       <li> <a href="#wishlist" class="nav-link px-1 text-white d-flex align-items-center"> <span class="material-symbols-rounded me-1"> favorite </span> <!-- Badge --> <span class="badge rounded-pill bg-purple ">3</span> </a> </li>
+       <li> <a href="#" class="nav-link px-1 text-white d-flex align-items-center"> <span class="material-symbols-rounded me-1"> shopping_cart </span> <!-- Badge --> <span class="badge rounded-pill bg-purple ">3</span> </a>
+      </ul>
+     </div>
+    </div>
+   </div> <!-- Main Menu -->
+   <div class="lower-bg py-2 d-block d-lg-none">
+    <div class="container">
+     <!-- Navbar -->
+     <div class="row d-flex justify-content-start align-items-center">
+      <div class="col-1"> <button class="navbar-toggler d-flex align-items-center ms-3 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="material-symbols-rounded"> menu </span> </button> </div>
+      <div class="col-11">
+       <form>
+        <div class="d-flex justify-content-end align-items-center">
+         <div class="w-100 mx-1">
+          <div class="input-group mb-2 searchform-wrapper">
+           <div class="input-group-prepend">
+            <div class="input-group-text searchico"><span class="material-symbols-rounded text-dark"> search </span></div>
+           </div> <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
+          </div>
+         </div>
+        </div>
+       </form>
+      </div>
+     </div>
+     <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+       <li class="nav-item"> <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a> </li>
+       <li class="nav-item"> <a class="nav-link text-white" href="./dafox-product-listing-page.html">DafoxTech</a> </li>
+       <li class="nav-item"> <a class="nav-link text-white" href="./adopisoft-product-listing.html">AdoPisoft</a> </li>
+       <li class="nav-item"> <a class="nav-link text-white" href="#">On Sale</a> </li>
+       <li class="nav-item"> <a class="nav-link text-white" href="#">Blog and Events/a> </li>
+       <li class="nav-item"> <a class="nav-link text-white" href="#">FAQs</a> </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </header>
+ </section> <!-- Headline -->
+ <div class="headline-wrapper adopisoft-header sticky-top" id="headline_wrapper">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-4 d-flex align-self-center">
+     <div class="pb-4">
+      <div class="pb-5 d-flex justify-content-center justify-content-lg-start"> <img src="img/ado-logo.png" alt="AdoPisoft"> </div>
+      <h3 class="text-center text-lg-start mb-3 white-text" style="color:#fff;"><b>Enjoy Up to 20<span class="material-symbols-rounded text-white"> percent </span> Off on </br>Your First Purchase!</b></h3>
+      <h5 class="fs-5 d-flex flex-wrap text-center text-lg-start white-text" style="color:#fff;">For a Seamless & Hassle-FREE eLoading services, Gcash, Maya Cash-in and Bills Payment.</h5>
+     </div>
+    </div>
+    <div class="col-lg-6 text-center"> <img src="img/ado-banner-2.png" alt="" class="img-fluid slider-img"> </div>
+   </div>
+  </div>
+ </div>
+ 
+ <div class="page-headers-adopisoft sticky" id="page_header">
+    <div class="top-header py-2 header-bg">
         <div class="container">
-          <div class="row d-flex align-items-center">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-lg-6 d-flex flex-row"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> phone_forwarded </span>09177024612</a> <a href="#" class="text-white fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> mail </span> flaregoshoponline@gmail.com</a> </div>
+          <div class="col-lg-6 fs-7 d-lg-block d-none"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center justify-content-end"> <span class="material-symbols-rounded me-1"> map </span> Track Order </a> </div>
+         </div>
+        </div>
+        <div class="divider mt-2 d-none d-lg-block"></div> <!-- Search -->
+        <div class="container py-3 d-none d-lg-block">
+         <div class="d-flex align-items-center justify-content-lg-center justify-content-between">
+          <!-- Logo -->
+          <div class="col-lg-3"> <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a> </div> <!-- Form -->
+          <div class="col-lg-6 d-lg-block d-none">
+           <form>
+            <div class="form-row">
+             <div class="col-auto">
+              <div class="input-group mb-2 searchform-wrapper">
+               <div class="input-group-prepend">
+                <div class="input-group-text searchico"> <span class="material-symbols-rounded text-dark ps-3 "> search </span> </div>
+               </div> <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
+              </div>
+             </div>
+            </div>
+           </form>
+          </div> <!-- Cart Menu -->
+          <ul class="nav d-flex justify-content-end col-lg-3">
+           <li> <a href="./account.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> person </span> Sign In </a> </li>
+           <li> <a href="#wishlist" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> favorite </span> <!-- Badge --> <span class="badge rounded-circle bg-purple me-1">3</span> Wishlist </a> </li>
+           <li> <a href="./cart.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> shopping_cart </span> <!-- Badge --> <span class="badge rounded-pill bg-purple me-1">3</span> Cart </a> </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="lower-bg py-2 d-lg-block d-none">
+        <div class="container">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-lg-3">
+           <div class="dropdown show"> <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> All Categories </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+           </div>
+          </div>
+          <ul class="nav col-12 col-lg-6 justify-content-center">
+           <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
+           <li><a href="./dafox-product-listing-page.html" class="nav-link px-2 text-white">DafoxTech</a></li>
+           <li><a href="./adopisoft-product-listing.html" class="nav-link px-2 text-white">AdoPisoft</a></li>
+           <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
+           <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
+           <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          </ul>
+          <div class="col-12 col-lg-3 d-flex justify-content-end text-end"> <a href="" class="text-white d-flex align-items-center"><span class="material-symbols-rounded me-2"> inventory </span> 30 Days Free Return</a> </div>
+         </div>
+        </div>
+       </div>
+        <div class="container">
+        <div class="row d-flex align-items-center">
             <div class="col-lg-4">
-              <div class="p-3"><img src="img/ado-logo.png" style="width:40%;" alt=""></div>
+            <div class="p-3"><img src="img/ado-logo.png" style="width:40%;" alt=""></div>
             </div>
             <div class="col-lg-4 text-center">
-              <div class="p-3">
-                <div class="text-white fs-5"><b>Official Online Store</b></div>
-              </div>
+            <div class="p-3">
+            <div class="text-white fs-5"><b>Official Online Store</b></div>
+            </div>
             </div>
             <div class="col-lg-4">
-              <div class="p-3"><img src="img/ado-headline-img.png" alt="" class="img-fluid header-img"></div>
+            <div class="p-3"><img src="img/ado-headline-img.png" alt="" class="img-fluid header-img"></div>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+  
+ </div>
 
-      
-    <div class="container mt-4">
-        <ul class="scrollable nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-              
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-2 ps-0"><img src="img/machine-accessories.png" alt="" class="w-50"></div>
-                        <div class="text-dark fs-6">Machine </br>Accessories</div>
-                    </div>
-                </button> 
-              </li>
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-              
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-2 ps-0"><img src="img/pcb.png" alt="" class="w-50"></div>
-                        <div class="text-dark">PCB Custom <br> Boards</div>
-                    </div>
-                </button> </li>
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-              
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-2 ps-0"><img src="img/keys.png" alt="" class="w-50"></div>
-                        <div class="text-dark"> License Keys</div>
-                    </div>
-                </button> </li>
-            <li class="nav-item" role="presentation"> 
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-              
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-2 ps-0"><img src="img/diy1.png" alt="" class="w-50"></div>
-                        <div class="text-dark"> DIY Kits</div>
-                    </div>
-                </button> </li>
-            <li class="nav-item" role="presentation"> 
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-2 ps-0"><img src="img/vendo-machines.png" alt="" class="w-50"></div>
-                        <div class="text-dark"> Ready-Made<br>Machines</div>
-                    </div>
-                </button> </li>
-                <li class="nav-item" role="presentation"> 
-                    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                    
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                              <div class="p-2 ps-0"><img src="img/machine-accessories.png" alt="" class="w-50"></div>
-                              <div class="text-dark">Machine </br>Accessories</div>
-                          </div>
-                      </button> 
-                    </li>
-                  <li class="nav-item" role="presentation"> 
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                    
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                              <div class="p-2 ps-0"><img src="img/pcb.png" alt="" class="w-50"></div>
-                              <div class="text-dark">PCB Custom <br> Boards</div>
-                          </div>
-                      </button> </li>
-                  <li class="nav-item" role="presentation"> 
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                    
-                          <div class="d-flex flex-column align-items-center justify-content-center">
-                              <div class="p-2 ps-0"><img src="img/keys.png" alt="" class="w-50"></div>
-                              <div class="text-dark"> License Keys</div>
-                          </div>
-                      </button> </li>
-                  
-        </ul> <!-- Machine Accessories -->
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="container my-4">
-                    <div class="row  justify-content-center">
-                        <!-- Filters Section -->
-                        <div class="col-md-2 pe-4">
-                            <h5 class="pb-3">Filters</h5> <!-- Star Rating Filter -->
-                            <div class="mb-3">
-                                <h6 class="fs-6 pb-3">Star Rating</h6>
-                                <div class="form-check"> <label class="form-check-label star-label" for="rating5"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> </label> </div>
-                                <div class="form-check"> <label class="form-check-label star-label" for="rating4"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
-                                <div class="form-check"> <label class="form-check-label star-label" for="rating3"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
-                                <div class="form-check"> <label class="form-check-label star-label" for="rating2"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
-                                <div class="form-check"> <label class="form-check-label star-label" for="rating1"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
-                            </div> <!-- Price Range Filter -->
-                            <div class="mb-3">
-                                <h6 class="fs-6 pb-3">Price Range</h6>
-                                <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price1"> <label class="form-check-label" for="price1"> All Prices </label> </div>
-                                <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price2"> <label class="form-check-label" for="price2"> Php51 - Php100 </label> </div>
-                                <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price3"> <label class="form-check-label" for="price3"> Php101 - Php200 </label> </div>
-                                <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price3"> <label class="form-check-label" for="price3"> Php201 - Php300 </label> </div>
-                                <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price3"> <label class="form-check-label" for="price3"> Php301 - Php400 </label> </div>
-                            </div>
-                        </div> <!-- Product Listing Section -->
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-between align-items-center mb-3 pb-3">
-                                <h5 class="mb-0 fs-6">13 items found for Machine Accesories</h5>
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-group"> <button type="button" class="btn me-2 d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false"> Sort by <span class="ms-1 material-symbols-rounded text-dark"> keyboard_arrow_down </span> </button>
-                                        <div class="dropdown-menu border border-2"> <a href="" class="dropdown-item">Grid view</a> <a href="" class="dropdown-item">List view</a> </div>
-                                    </div>
-                                    <div class="btn-group btn-views" role="group" aria-label="View toggle"> <button type="button" class="btn btn-outline-secondary active d-flex align-items-center" id="gridViewBtn"> <span class="material-symbols-rounded fill text-white"> grid_on </span></button> <button type="button" class="btn btn-outline-secondary  d-flex align-items-center" id="gridViewBtn"> <span class="material-symbols-rounded fill text-dark"> grid_view </span></button> <button type="button" class="btn btn-outline-secondary d-flex align-items-center" id="listViewBtn"> <span class="material-symbols-rounded fill text-dark"> view_column_2 </span> </button> <button type="button" class="btn btn-outline-secondary d-flex align-items-center" id="listViewBtn"> <span class="material-symbols-rounded fill text-dark"> splitscreen </span> </button> </div>
-                                </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-3 g-4" id="productContainer">
-                                <!-- Product Card 1 -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Product Card 2 -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Product Card 3 -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Add more product cards as needed -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Add more product cards as needed -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Add more product cards as needed -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Add more product cards as needed -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Add more product cards as needed -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div> <!-- Add more product cards as needed -->
-                                <div class="col">
-                                    <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
-                                        <div class="card-body">
-                                            <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
-                                            <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
-                                            <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
-                                            <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
-                                        </div>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
-                                            <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
-                                        </div>
-                                        <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
-                                    </div>
-                                </div>
-                            </div> <!-- Load More -->
-                            <div class="text-center my-5"> <button class="btn  btn-white bradius " style="width: auto;">Load More Products <i class="bi bi-chevron-down ps-2"></i></button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile content</div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact content</div>
-            <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">Settings content</div>
-            <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">About content</div>
-            <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help-tab">Help content</div>
+ <div class="container mt-4">
+  <ul class="scrollable nav-tabs" id="myTab" role="tablist">
+   <li class="nav-item" role="presentation"> <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/machine-accessories.png" alt="" class="w-50"></div>
+      <div class="text-dark fs-6">Machine </br>Accessories</div>
+     </div>
+    </button> </li>
+   <li class="nav-item" role="presentation"> <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/pcb.png" alt="" class="w-50"></div>
+      <div class="text-dark">PCB Custom <br> Boards</div>
+     </div>
+    </button> </li>
+   <li class="nav-item" role="presentation"> <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/keys.png" alt="" class="w-50"></div>
+      <div class="text-dark"> License Keys</div>
+     </div>
+    </button> </li>
+   <li class="nav-item" role="presentation"> <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/diy1.png" alt="" class="w-50"></div>
+      <div class="text-dark"> DIY Kits</div>
+     </div>
+    </button> </li>
+   <li class="nav-item" role="presentation"> <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/vendo-machines.png" alt="" class="w-50"></div>
+      <div class="text-dark"> Ready-Made<br>Machines</div>
+     </div>
+    </button> </li>
+   <li class="nav-item" role="presentation"> <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/machine-accessories.png" alt="" class="w-50"></div>
+      <div class="text-dark">Machine </br>Accessories</div>
+     </div>
+    </button> </li>
+   <li class="nav-item" role="presentation"> <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/pcb.png" alt="" class="w-50"></div>
+      <div class="text-dark">PCB Custom <br> Boards</div>
+     </div>
+    </button> </li>
+   <li class="nav-item" role="presentation"> <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+     <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="p-2 ps-0"><img src="img/keys.png" alt="" class="w-50"></div>
+      <div class="text-dark"> License Keys</div>
+     </div>
+    </button> </li>
+  </ul> <!-- Machine Accessories -->
+  <div class="tab-content" id="myTabContent">
+   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="container my-4">
+     <div class="row  justify-content-center">
+      <!-- Filters Section -->
+      <div class="col-md-2 pe-4">
+       <h5 class="pb-3">Filters</h5> <!-- Star Rating Filter -->
+       <div class="mb-3">
+        <h6 class="fs-6 pb-3">Star Rating</h6>
+        <div class="form-check"> <label class="form-check-label star-label" for="rating5"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> </label> </div>
+        <div class="form-check"> <label class="form-check-label star-label" for="rating4"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
+        <div class="form-check"> <label class="form-check-label star-label" for="rating3"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
+        <div class="form-check"> <label class="form-check-label star-label" for="rating2"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
+        <div class="form-check"> <label class="form-check-label star-label" for="rating1"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> <span class="material-symbols-rounded"> grade</span> </label> </div>
+       </div> <!-- Price Range Filter -->
+       <div class="mb-3">
+        <h6 class="fs-6 pb-3">Price Range</h6>
+        <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price1"> <label class="form-check-label" for="price1"> All Prices </label> </div>
+        <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price2"> <label class="form-check-label" for="price2"> Php51 - Php100 </label> </div>
+        <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price3"> <label class="form-check-label" for="price3"> Php101 - Php200 </label> </div>
+        <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price3"> <label class="form-check-label" for="price3"> Php201 - Php300 </label> </div>
+        <div class="form-check checkbox-range"> <input class="form-check-input" type="checkbox" value="" id="price3"> <label class="form-check-label" for="price3"> Php301 - Php400 </label> </div>
+       </div>
+      </div> <!-- Product Listing Section -->
+      <div class="col-md-8">
+       <div class="d-flex justify-content-between align-items-center mb-3 pb-3">
+        <h5 class="mb-0 fs-6">13 items found for Machine Accesories</h5>
+        <div class="d-flex align-items-center">
+         <div class="btn-group"> <button type="button" class="btn me-2 d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false"> Sort by <span class="ms-1 material-symbols-rounded text-dark"> keyboard_arrow_down </span> </button>
+          <div class="dropdown-menu border border-2"> <a href="" class="dropdown-item">Grid view</a> <a href="" class="dropdown-item">List view</a> </div>
+         </div>
+         <div class="btn-group btn-views" role="group" aria-label="View toggle"> <button type="button" class="btn active d-flex align-items-center" id="gridViewBtn" style="border-color: #eaeaea;"> <span class="material-symbols-rounded fill text-white"> grid_on </span> </button> <button type="button" class="btn btn-outline-secondary d-flex align-items-center" id="gridViewBtn" style="border-color: #eaeaea;"> <span class="material-symbols-rounded fill text-dark"> grid_view </span> </button> <button type="button" class="btn btn-outline-secondary d-flex align-items-center" id="listViewBtn" style="border-color: #eaeaea;"> <span class="material-symbols-rounded fill text-dark"> view_column_2 </span> </button> <button type="button" class="btn btn-outline-secondary d-flex align-items-center" id="listViewBtn" style="border-color: #eaeaea;"> <span class="material-symbols-rounded fill text-dark"> splitscreen </span> </button> </div>
         </div>
-    </div> <!-- Footer -->
-    <footer class="footer text-white pt-6 footer-bg mt-auto ">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-md-3 col-sm-6 mb-3 "> <a href="./index.html" class="d-flex align-items-center justify-content-md-start justify-content-center"><img src="img/flarego-shop-logo.png" alt=""></a>
-                    <div class="mt-4 pe-lg-5 text-md-start text-center pt-3 pb-5 pb-md-3">It started with a crazy idea, and is now being used by thousands of people nationwide and in other countries.</div>
-                </div>
-                <div class="col-md-6 col-sm-6 mb-3">
-                    <h5 class="text-white">Quicklinks</h5>
-                    <div classs="d-flex flex-wrap align-items-center justify-content-center">
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="list-unstyled col-4">
-                                    <li><a href="./index.html" class="text-white mb-3">Home</a></li>
-                                    <li><a href="./dafox-product-listing-page.html" class="text-white">DafoxTech</a></li>
-                                    <li><a href="./adopisoft-product-listing.html" class="text-white">AdoPisoft</a></li>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="list-unstyled col-4">
-                                    <li><a href="#" class="text-white">On Sale</a></li>
-                                    <li><a href="#" class="text-white">Blog and Events</a></li>
-                                    <li><a href="#" class="text-white">FAQs</a></li>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <div class="list-unstyled col-4">
-                                    <li><a href="#" class="text-white">On Sale</a></li>
-                                    <li><a href="#" class="text-white">Blog and Events</a></li>
-                                    <li><a href="#" class="text-white">FAQs</a></li>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3 pt-4">
-                    <h5 class="text-white">Newsletter</h5>
-                    <form>
-                        <div class="form-group mb-3"> <label for="newsletterEmail" class="sr-only">Email address</label> <input type="email" class="form-control bradius" id="newsletterEmail" placeholder="Enter email" required> </div> <button type="submit" class="btn btn-primary btn-cta bradius">Subscribe</button>
-                    </form>
-                </div>
-            </div>
+       </div>
+       <div class="row row-cols-1 row-cols-md-3 g-4" id="productContainer">
+        <!-- Product Card 1 -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Product Card 2 -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Product Card 3 -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Add more product cards as needed -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Add more product cards as needed -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Add more product cards as needed -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Add more product cards as needed -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Add more product cards as needed -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
+        </div> <!-- Add more product cards as needed -->
+        <div class="col">
+         <div class="card card-hover position-relative"> <img src="img/prod01.png" class="card-img-top" alt="Item Image" style="background-color: #ECF1F3;  border-radius: 8px;">
+          <div class="card-body">
+           <h5 class="card-title f18 prod-title">ESP32 Development Board 30P/38P with Activation Key Code</h5>
+           <p class="card-text prod-desc f16 prod-desc">All accessories included</p>
+           <p><b class="price f18">PHP999.00</b> <span class="discounted-price">PHP1299</span></p>
+           <div class="d-flex justify-content-start"> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded fill"> grade</span> <span class="material-symbols-rounded"> star_half</span> </div>
+          </div>
+          <div class="position-absolute top-0 end-0 p-2">
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> visibility </span></a></div>
+           <div class="ico-wrapper"><a href="#" class="text-dark"><span class="material-symbols-rounded"> favorite </span></a></div>
+          </div>
+          <div class="badge-store"> <img src="img/dafox-ico.png" alt="" class="me-2"> <span class="badge bg-danger p-2">Store</span> </div> <button class="btn btn-primary add-to-cart btn-cta bradius">Add to Cart</button>
+         </div>
         </div>
-        <div class="divider mt-5" id="end-footer">
-            <div class="container py-4 py-md-3">
-                <div class="row align-items-center">
-                    <div class="col-sm col-md-6 order-2 order-sm-1 text-center text-sm-start py-3 py-md-0"><a href="" class="text-white"><b> &copy; 2024, Flarego</b> Online Store. Powered by Shopify</a></div>
-                    <div class="col-sm col-md-6 order-1 order-sm-2">
-                        <div class="d-flex flex-column flex-md-row justify-content-end align-items-center"> We accept payments via <img class="py-3 py-md-0 h-auto w-auto align-self-center ps-md-4" src="img/payment-gateway.png" alt=""> </div>
-                    </div>
-                </div>
-            </div>
+       </div> <!-- Load More -->
+       <div class="text-center my-5"> <button class="btn  btn-white bradius " style="width: auto;">Load More Products <i class="bi bi-chevron-down ps-2"></i></button></div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile content</div>
+   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact content</div>
+   <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">Settings content</div>
+   <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">About content</div>
+   <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help-tab">Help content</div>
+  </div>
+ </div> <!-- Footer -->
+ <footer class="footer text-white pt-6 footer-bg mt-auto ">
+  <div class="container">
+   <div class="row pt-5">
+    <div class="col-md-3 col-sm-6 mb-3 "> <a href="./index.html" class="d-flex align-items-center justify-content-md-start justify-content-center"><img src="img/flarego-shop-logo.png" alt=""></a>
+     <div class="mt-4 pe-lg-5 text-md-start text-center pt-3 pb-5 pb-md-3">It started with a crazy idea, and is now being used by thousands of people nationwide and in other countries.</div>
+    </div>
+    <div class="col-md-6 col-sm-6 mb-3">
+     <h5 class="text-white">Quicklinks</h5>
+     <div classs="d-flex flex-wrap align-items-center justify-content-center">
+      <div class="row">
+       <div class="col-sm">
+        <div class="list-unstyled col-4">
+         <li><a href="./index.html" class="text-white mb-3">Home</a></li>
+         <li><a href="./dafox-product-listing-page.html" class="text-white">DafoxTech</a></li>
+         <li><a href="./adopisoft-product-listing.html" class="text-white">AdoPisoft</a></li>
         </div>
-    </footer> <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+       </div>
+       <div class="col-sm">
+        <div class="list-unstyled col-4">
+         <li><a href="#" class="text-white">On Sale</a></li>
+         <li><a href="#" class="text-white">Blog and Events</a></li>
+         <li><a href="#" class="text-white">FAQs</a></li>
+        </div>
+       </div>
+       <div class="col-sm">
+        <div class="list-unstyled col-4">
+         <li><a href="#" class="text-white">On Sale</a></li>
+         <li><a href="#" class="text-white">Blog and Events</a></li>
+         <li><a href="#" class="text-white">FAQs</a></li>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-3 pt-4">
+     <h5 class="text-white">Newsletter</h5>
+     <form>
+      <div class="form-group mb-3"> <label for="newsletterEmail" class="sr-only">Email address</label> <input type="email" class="form-control bradius" id="newsletterEmail" placeholder="Enter email" required> </div> <button type="submit" class="btn btn-primary btn-cta bradius">Subscribe</button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <div class="divider mt-5" id="end-footer">
+   <div class="container py-4 py-md-3">
+    <div class="row align-items-center">
+     <div class="col-sm col-md-6 order-2 order-sm-1 text-center text-sm-start py-3 py-md-0"><a href="" class="text-white"><b> &copy; 2024, Flarego</b> Online Store. Powered by Shopify</a></div>
+     <div class="col-sm col-md-6 order-1 order-sm-2">
+      <div class="d-flex flex-column flex-md-row justify-content-end align-items-center"> We accept payments via <img class="py-3 py-md-0 h-auto w-auto align-self-center ps-md-4" src="img/payment-gateway.png" alt=""> </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </footer> <!-- Bootstrap JS -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="js/custom-js.js"></script>
 </body>
 
 </html>

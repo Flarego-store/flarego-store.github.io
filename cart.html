@@ -16,7 +16,7 @@
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 24
+    'opsz' 20
   }
   
   .material-symbols-rounded.fill {
@@ -24,7 +24,7 @@
     'FILL' 1,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 24
+    'opsz' 20
   }
 
 </style>
@@ -32,224 +32,111 @@
 <body>
   <!-- Header -->
   <section class="header-wrapper">
-    <header class="d-none d-md-block">
-      <div class="header-bg text-white">
-        <!-- Top Header -->
-        <div class="top-header py-2">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <div class="col-lg-6 col-6 d-flex flex-row">
-                <a href="#" class="text-white me-4 fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1">
-                  phone_forwarded
-                  </span>09177024612</a>
-                <a href="#" class="text-white fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1">
-                  mail
-                  </span>
-                  flaregoshoponline@gmail.com</a>
-              </div>
-              <div class="col-lg-6 col-6 fs-7">
-                <a href="#" class="text-white me-4 fs-7 d-flex align-items-center justify-content-end">
-                <span class="material-symbols-rounded me-1">
-                map
-                </span> Track Order
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Search -->
-        <div class="container custom-container py-3">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
-            <!-- Logo -->
-            <div class="col-lg-3">
-              <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a>
-            </div>
-            <!-- Form -->
-            <div class="col-lg-6">
-              <form>
-                <div class="form-row align-items-center">
-                  <div class="col-auto">
-                    <div class="input-group mb-2 searchform-wrapper">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text searchico">
-                          <span class="material-symbols-rounded text-dark ps-3 ">
-                            search
-                            </span>
-                        </div>
-                      </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
+    <header>
+        <div class="header-bg text-white">
+            <!-- Top Header -->
+            <div class="top-header py-2">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <div class="col-lg-6 d-flex flex-row"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> phone_forwarded </span>09177024612</a> <a href="#" class="text-white fs-7 d-flex align-items-center"><span class="material-symbols-rounded me-1"> mail </span> flaregoshoponline@gmail.com</a> </div>
+                        <div class="col-lg-6 fs-7 d-lg-block d-none"> <a href="#" class="text-white me-4 fs-7 d-flex align-items-center justify-content-end"> <span class="material-symbols-rounded me-1"> map </span> Track Order </a> </div>
                     </div>
-                  </div>
                 </div>
-              </form>
-            </div>
-            <!-- Cart Menu -->
-            <ul class="nav justify-content-end col-lg-3  text-end">
-              <li><a href="./account.html" class="nav-link px-2 text-white align-items-center d-flex">
-                <span class="material-symbols-rounded me-1">
-                person
-                </span>
-                Sign In
-              </a></li>
-              <li>
-                <a href="#wishlist" class="nav-link px-2 text-white align-items-center d-flex">
-                  <span class="material-symbols-rounded me-1">
-                    favorite
-                    </span>
-                  <!-- Badge -->
-                  <span class="badge rounded-circle bg-purple me-1">3</span> Wishlist
-                </a>
-              </li>
-              <li>
-                <a href="./cart.html" class="nav-link px-2 text-white align-items-center d-flex">
-                  <span class="material-symbols-rounded me-1">
-                    shopping_cart
-                    </span>
-                  <!-- Badge -->
-                  <span class="badge rounded-pill bg-purple me-1">3</span> Cart
-                </a>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Main Menu -->
-      <div class="lower-bg py-2">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <div class="col-lg-3">
-              <div class="dropdown show">
-                <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  All Categories
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                <div class="divider mt-2 d-none d-lg-block"></div> <!-- Search -->
+                <div class="container py-3 d-none d-lg-block">
+                    <div class="d-flex align-items-center justify-content-lg-center justify-content-between">
+                        <!-- Logo -->
+                        <div class="col-lg-3"> <a href="./index.html"><img src="img/flarego-shop-logo.png" alt=""></a> </div> <!-- Form -->
+                        <div class="col-lg-6 d-lg-block d-none">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-auto">
+                                        <div class="input-group mb-2 searchform-wrapper">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text searchico"> <span class="material-symbols-rounded text-dark ps-3 "> search </span> </div>
+                                            </div> <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> <!-- Cart Menu -->
+                        <ul class="nav d-flex justify-content-end col-lg-3">
+                            <li> <a href="./account.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> person </span> Sign In </a> </li>
+                            <li> <a href="#wishlist" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> favorite </span> <!-- Badge --> <span class="badge rounded-circle bg-purple me-1">3</span> Wishlist </a> </li>
+                            <li> <a href="./cart.html" class="nav-link px-2 text-white align-items-center d-flex"> <span class="material-symbols-rounded me-1"> shopping_cart </span> <!-- Badge --> <span class="badge rounded-pill bg-purple me-1">3</span> Cart </a> </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
+            </div> <!-- Main Menu -->
+            <div class="lower-bg py-2 d-lg-block d-none">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <div class="col-lg-3">
+                            <div class="dropdown show"> <a class="btn dropdown-toggle btn-cat" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> All Categories </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+                            </div>
+                        </div>
+                        <ul class="nav col-12 col-lg-6 justify-content-center">
+                            <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
+                            <li><a href="./dafox-product-listing-page.html" class="nav-link px-2 text-white">DafoxTech</a></li>
+                            <li><a href="./adopisoft-product-listing.html" class="nav-link px-2 text-white">AdoPisoft</a></li>
+                            <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
+                            <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
+                            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                        </ul>
+                        <div class="col-12 col-lg-3 d-flex justify-content-end text-end"> <a href="" class="text-white d-flex align-items-center"><span class="material-symbols-rounded me-2"> inventory </span> 30 Days Free Return</a> </div>
+                    </div>
+                </div>
             </div>
-
-            <ul class="nav col-12 col-lg-6 justify-content-center">
-              <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
-              <li><a href="./dafox-product-listing-page.html" class="nav-link px-2 text-white">DafoxTech</a></li>
-              <li><a href="./adopisoft-product-listing.html" class="nav-link px-2 text-white">AdoPisoft</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">On Sale</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Blog and Events</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            </ul>
-
-
-            <div class="col-12 col-lg-3 d-flex justify-content-end text-end">
-              <a href="" class="text-white d-flex align-items-center"><span class="material-symbols-rounded me-2">
-                inventory
-                </span> 30 Days Free Return</a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Mobile Header -->
-    <header class="mobile-header d-block d-md-none">
-      <div class="header-bg text-white">
-        <!-- Top Header -->
-        <div class="top-header py-2">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-sm-center justify-content-center">
-              <div class="col-lg-6 col-12 text-center info">
-                <a href="#" class="text-white me-4 fs-sm-2"><i class="fa-solid fa-phone me-2"></i> 09177024612</a>
-                <a href="#" class="text-white fs-sm-2"><i class="fa-regular fa-envelope me-2"></i>
-                  flaregoshoponline@gmail.com</a>
-              </div>
-              <div class="col-lg-6 col-6 text-end d-none d-lg-block"><i class="fa-solid fa-map-location-dot"></i> Track
-                Order</div>
+    </header> <!-- Mobile Header -->
+    <header>
+        <div class="header-bg text-white d-block d-lg-none">
+            <!-- Search -->
+            <div class="container py-2 ">
+                <div class="d-flex flex-nowrap align-items-center justify-content-center justify-content-lg-start">
+                    <!-- Logo -->
+                    <div class="col-lg-4"> <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a> </div> <!-- Cart Menu -->
+                    <ul class="nav col-8 col-lg-4 d-flex align-items-center justify-content-end">
+                        <li><a href="./account.html" class="nav-link px-1 text-white d-flex align-items-center"><span class="material-symbols-rounded me-1"> person </span></a></li>
+                        <li> <a href="#wishlist" class="nav-link px-1 text-white d-flex align-items-center"> <span class="material-symbols-rounded me-1"> favorite </span> <!-- Badge --> <span class="badge rounded-pill bg-purple ">3</span> </a> </li>
+                        <li> <a href="#" class="nav-link px-1 text-white d-flex align-items-center"> <span class="material-symbols-rounded me-1"> shopping_cart </span> <!-- Badge --> <span class="badge rounded-pill bg-purple ">3</span> </a>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Search -->
-        <div class="container py-2">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <!-- Logo -->
-            <div class="col-lg-4 col-4">
-              <a href=""><img src="img/flarego-shop-logo.png" class="img-fluid "></a>
-            </div>
-            <!-- Cart Menu -->
-            <ul class="nav col-8 col-lg-4 justify-content-end">
-              <li><a href="./account.html" class="nav-link px-2 text-white"><i class="fa-regular fa-user"></i></a></li>
-              <li>
-                <a href="#wishlist" class="nav-link px-2 text-white">
-                  <i class="fa-regular fa-heart"></i>
-                  <!-- Badge -->
-                  <span class="badge rounded-pill bg-purple ">3</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-2 text-white">
-                  <i class="fa-solid fa-bag-shopping"></i>
-                  <!-- Badge -->
-                  <span class="badge rounded-pill bg-purple ">3</span>
-                </a>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Main Menu -->
-      <div class="lower-bg py-2">
-        <div class="container">
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg">
+        </div> <!-- Main Menu -->
+        <div class="lower-bg py-2 d-block d-lg-none">
             <div class="container">
-              <div class="row  d-flex justify-content-start align-items-center">
-                <div class="col-2">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                  </button>
-                </div>
-                <div class="col-10">
-                  <form>
-                    <div class="form-row align-items-center">
-                      <div class="col-auto">
-                        <label class="sr-only" for="inlineFormInputGroup">Find product</label>
-                        <div class="input-group mb-2 searchform-wrapper">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text searchico"><i class="fa-solid fa-magnifying-glass"></i></div>
-                          </div>
-                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
-                        </div>
-                      </div>
+                <!-- Navbar -->
+                <div class="row d-flex justify-content-start align-items-center">
+                    <div class="col-1"> <button class="navbar-toggler d-flex align-items-center ms-3 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="material-symbols-rounded"> menu </span> </button> </div>
+                    <div class="col-11">
+                        <form>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="w-100 mx-1">
+                                    <div class="input-group mb-2 searchform-wrapper">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text searchico"><span class="material-symbols-rounded text-dark"> search </span></div>
+                                        </div> <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Find product">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                  </form>
                 </div>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./dafox-product-listing-page.html">DafoxTech</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./adopisoft-product-listing.html">AdoPisoft</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">On Sale</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog and Events/a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">FAQs</a>
-                  </li>
-                </ul>
-              </div>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="./dafox-product-listing-page.html">DafoxTech</a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="./adopisoft-product-listing.html">AdoPisoft</a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#">On Sale</a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#">Blog and Events/a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#">FAQs</a> </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
         </div>
-      </div>
     </header>
-  </section>
+</section> 
 
   <!-- Tabs -->
   <section class="wizard-wrapper">
@@ -915,7 +802,7 @@ close
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script>
     $(document).ready(function () {
       let currentStep = 1;
