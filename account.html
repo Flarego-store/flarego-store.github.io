@@ -164,21 +164,41 @@
             </div>
             <!-- Account Dropdown Select On Mobile -->
             <div class="d-block d-md-none">
-              <select id="navSelect" class="form-select" aria-label="Account">
-                <option selected value="account" data-content-id="accounts">Account</option>
-                <option value="address" data-content-id="account-address">Address</option>
-                <option value="orders" data-content-id="account-orders">Orders</option>
-                <option value="wishlist" data-content-id="account-wishlist">Wishlist</option>
-                <option value="5">Logout</option>
-              </select>
+              <!-- <ul class="nav nav-tabs mb-3" id="standort" role="tablist">
+                <li class="nav-item dropdown" role="presentation">
+                  <a id="dropName" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Select</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item drop-item">
+                      <button class="dropdown-item nav-link active" id="accounts-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab" aria-controls="accounts" aria-selected="true">
+                      Item 1
+                      </button>
+                    </li>
+                    <li class="nav-item drop-item">
+                      <button class="dropdown-item nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#tabs-2" type="button" role="tab" aria-controls="tabs-2" aria-selected="false">
+                      Item 2
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul> -->
+              <div class="dropdown">
+                <button class="btn dropdown-toggler" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" role="button" aria-expanded="false"> 
+                    Select <span class="caret"></span>
+                  <span class="material-symbols-rounded">
+                    keyboard_arrow_down
+                    </span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="tablist" id="tab-selection">
+                  <li><button class="dropdown-item active" id="accounts-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab" aria-controls="accounts" aria-selected="true">Accounts</button></li>
+                  <li><button class="dropdown-item" id="account-address-tab" data-bs-toggle="tab" data-bs-target="#account-address" type="button" role="tab" aria-controls="account-address" aria-selected="true">Address</button></li>
+                  <li><button class="dropdown-item" id="account-orders-tab" data-bs-toggle="tab" data-bs-target="#account-orders" type="button" role="tab" aria-controls="account-orders" aria-selected="true">Orders</button></li>
+                  <li><button class="dropdown-item" id="account-wishlist-tab" data-bs-toggle="tab" data-bs-target="#account-wishlist" type="button" role="tab" aria-controls="account-wishlist" aria-selected="true">Wishlist</button></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="d-md-none d-block">
-        <div id="nav-container">
-
-        </div>
-      </div>
+       
         <div class="col-md-9">
           <div class="tab-content" id="v-pills-tabContent">
             <!-- Account Details -->
@@ -242,8 +262,10 @@
                       <div class="address-title">
                         <p><b>Billing Address</b></p>
                       </div>
-                      <div class="ms-auto align-items-end edit-address">
-                        <i class="fa-regular fa-pen-to-square"></i>
+                      <div class="ms-auto edit-address d-flex align-items-center">
+                        <span class="material-symbols-rounded">
+                          edit
+                          </span>
                         <span>Edit</span>
                       </div>
                     </div>
@@ -260,8 +282,10 @@
                       <div class="address-title">
                         <p><b>Billing Address</b></p>
                       </div>
-                      <div class="ms-auto align-items-end edit-address">
-                        <i class="fa-regular fa-pen-to-square"></i>
+                      <div class="ms-auto edit-address d-flex align-items-center">
+                        <span class="material-symbols-rounded">
+                          edit
+                          </span>
                         <span>Edit</span>
                       </div>
                     </div>
@@ -391,7 +415,9 @@
                     <tr>
                       <td>
                         <div class="d-flex justify-content-start align-items-center">
-                          <span><i class="fa-solid fa-x"></i></span>
+                          <span class="material-symbols-rounded">
+                            close
+                            </span>
                           <img src="img/wishlist.png" alt="" class="mx-3 img-fluid">
                           <span><b>Tray Table</b></span>
                         </div>
@@ -402,7 +428,9 @@
                     <tr>
                       <td>
                         <div class="d-flex justify-content-start align-items-center">
-                          <span><i class="fa-solid fa-x"></i></span>
+                          <span class="material-symbols-rounded">
+                            close
+                            </span>
                           <img src="img/wishlist.png" alt="" class="mx-3 img-fluid">
                           <span><b>Tray Table</b></span>
                         </div>
@@ -413,7 +441,9 @@
                     <tr>
                       <td>
                         <div class="d-flex justify-content-start align-items-center">
-                          <span><i class="fa-solid fa-x"></i></span>
+                          <span class="material-symbols-rounded">
+                            close
+                            </span>
                           <img src="img/wishlist.png" alt="" class="mx-3 img-fluid">
                           <span><b>Tray Table</b></span>
                         </div>
@@ -499,26 +529,8 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-      const navSelect=document.getElementById("navSelect");
-      const navContainer=document.getElementById("nav-container");
-      
-      function renderTab(selectedOption){
-        const contentId = selectedOption.getAttribute('data-content-id');
-        const contentElement = document.getElementById(contentId);
-        navContainer.innerHTML = contentElement.innerHTML;
-      }
+    <script src="js/custom-js.js"></script>
 
-      // Add event listener to the select element
-      navSelect.addEventListener('change', (e) => {
-        const selectedOption = e.target.options[e.target.selectedIndex];
-        renderTab(selectedOption);
-      });
-
-      // Render the default tab
-      const defaultOption = navSelect.options[navSelect.selectedIndex];
-      renderTab(defaultOption);
-    </script>
    
   </body>
 

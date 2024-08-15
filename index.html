@@ -30,7 +30,7 @@
 
 <body>
     <!-- Header -->
-    <section class="header-wrapper" id="header">
+    <section class="header-wrapper fixed-top" id="header">
         <header>
             <div class="header-bg text-white">
                 <!-- Top Header -->
@@ -144,7 +144,7 @@
         </div>
         <div class="carousel-inner carousel-wrapper">
             <!-- Slide 1-->
-            <div class="carousel-item active home-slider" style=" background: linear-gradient(to right, #D2FFF8, #FEFBEB, #F1CAC2);">
+            <div class="carousel-item active home-slider" style="background: linear-gradient(to right, #D2FFF8, #FEFBEB, #F1CAC2);">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-1"></div>
@@ -1134,13 +1134,14 @@
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-10">
-                    <div class="container">
+                    <div class="container ">
                         <div class="row">
                             <div class="hstack gap-2 pb-4">
                                 <div class="p-2">
                                     <h3 class="card-title" style="text-align: left;">Blog</h3>
                                 </div>
                             </div>
+                            
                             <div class="col-3">
                                 <div class="blog-thumbnail"> <img src="img/blog-thumbnail.png" alt="Featured Image">
                                     <div class="arrow"> <span class="material-symbols-rounded"> arrow_right_alt </span> </div>
@@ -1338,7 +1339,19 @@
     </footer> <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/custom-js.js"></script>
+    <script>
+        window.onscroll=function(){myFunc()};
+
+        var header=document.getElementById("header");
+        var offsetBotHeader=header.offsetTop+header.offsetHeight;
+        function myFunc(){
+        if(window.scrollY>10){
+            header.classList.add("shadow-lg");
+        }else{
+            header.classList.remove("shadow-lg");
+        }
+        }
+    </script>
 </body>
 
 </html>
