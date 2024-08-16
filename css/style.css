@@ -738,7 +738,7 @@ a{
     align-content: center;
 }
 .page-headers-adopisoft{
-    background: linear-gradient(to right, #D420A8, #990174);
+    background: linear-gradient(to bottom, #D420A8, #990174);
     position: relative;
 }
 .page-headers-dafoxtech{
@@ -1577,13 +1577,19 @@ padding: 15px;
     color:#ffad33;
  }
 
-
-
 .colon{
     margin-top: 1rem;
     font-size: 30px;
     font-weight: 900;
     color: #E07575;
+}
+.scrolled .col-3{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.scrolled .description{
+    white-space: wrap;
 }
 
 .scrollable{
@@ -1599,13 +1605,6 @@ padding: 15px;
 }
 
 .scrollable li{
-    display: inline-block;
-    vertical-align: middle;
-    color: white;
-    text-decoration: none;
-}
-
-.scrollable div{
     display: inline-block;
     vertical-align: middle;
     color: white;
@@ -1651,6 +1650,33 @@ padding: 15px;
 
 .dropdown-item.active {
     border-radius: 1rem;
-    background-color: #bbb8e2;
-    
+    background-color: #bbb8e2;    
+}
+
+#page_header_sm{
+    display:none;
+}
+
+@media screen and (max-width:991px) {
+    #page_header_sm{
+        display:block;
+    }
+    #page_header{
+        display:none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .horizontal-scrollable > .row{
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .horizontal-scrollable h5{
+        white-space: wrap;
+    }
+
+    .horizontal-scrollable > .row >.col-3{
+        display: inline-block;
+    }
 }
